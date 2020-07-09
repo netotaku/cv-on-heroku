@@ -3,8 +3,9 @@
     require __DIR__ . '/vendor/autoload.php';
 
     use Michelf\Markdown;
+    use Symfony\Component\Yaml\Yaml;
 
-    $data = yaml_parse_file("cv.yml"); 
+    $data = Yaml::parseFile('cv.yml');
 
 ?>
 <html>

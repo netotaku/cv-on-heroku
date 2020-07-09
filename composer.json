@@ -1,5 +1,6 @@
 {
     "require": {
-        "michelf/php-markdown": "^1.9"
+        "michelf/php-markdown": "^1.9",
+        "symfony/yaml": "^4.4"
     }
 }
