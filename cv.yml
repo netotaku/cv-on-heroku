@@ -12,6 +12,7 @@ contact:
   phone: "+44 (0) 7771 535 355"
   email: "nick@clarkson.io"
   website: "https://clar.ky"
+
 work_experience: 
   - 
     company: Halo
@@ -42,6 +43,73 @@ work_experience:
       I am also charged with the upkeep and refresh of all Creditcall forward-facing digital assets. This has included the redevelopment of creditcall.com and the development of the Express Boarding web application. The redeveloped creditcall.com resulted in a 300% uplift in conversions.
 
       I have brought new development and team workflow principles to Creditcall along with with a focus on iterative, user-centric development, while adhering to strict security standards.
+  - 
+    company: AUK
+    position: Technical Director
+    start: 1454284800
+    end: 1530403200    
+    description: |
+    
+      Headed up the technical department for AUK (formerly Agency UK). Ran a growing team of 6 developers. Spending quality time with current and prospective clients. In the pursuit of enjoyable and good works building web sites and web applications. Work included projects for: Welsh Meat, BSM, Ladbrokes, Pentathlon GB, Quintiles.
+  - 
+    company: G+V
+    position: Head of Development
+    start: Nov, 2012
+    end: Nov, 2014   
+    description: |
+    
+      Charged with agency technical direction. Instrumental in winning National Pitches. Championed solutions based approach and cross discipline collaboration within the business. Built, maintained and supported the development team. Work included projects for: Brothers Cider, Drinkaware, Continental Tyres, NOS. ISTRUCT, British Medical Journal, Zettics
+  - 
+    company: Great State
+    position: Senior Interface Developer
+    start: Nov, 2011
+    end: Nov, 2012 
+    description: |
+    
+      Created thick web interfaces and mobile applications. Took a lead role in the delivery of technical projects. Nurtured / advised junior members of the Development team. Contributed to process work groups. Work included projects for: Kia, Land Rover, Orange, The Royal Navy and The National Trust.
+
+      Won Drum Awards for Digital Industries 2015 - Best Not for Profit Website For The National Trust 50 Things Campaign
+  -
+    company: Digital Visitor
+    position: Development Manager
+    start: Nov, 2010
+    end: Nov, 2011
+    description: |
+      
+      Built Visitor Review, an integrated social media platform with a customer review element. Took a lead role in developing a RESTful API and a highly configurable REST client. Developed a suite of Javascript widgets which allow content editors to install social and review functions to their web sites. Work included projects for: Enjoy England, Joules Verne Voyages, London Clubs International.
+
+      Won Travolution Awards 2011 - Best Online Application For my work with Visitor Review.
+  -
+    company: Freelance
+    position: Web Developer / Designer
+    start: Nov, 2007
+    end: Nov, 2011
+    description: |
+      
+      As a freelancer I worked on a wide range of projects from intranets to eLearning applications. I bid for and won these projects and managed their delivery. Work included projects for: Telstra, Minervation, Oxford University, Scottish NHS, Thames Valley NHS, British Cardiology Society, King and Allen Talis, Team Rubber.
+
+      Won 2010 IVCA - Best Interactive For a Flash eLearning application designed & developed for Rethink (The National Schizophrenia Society) in conjunction with Minervation and Seafood. The competition included Channel 4 and CBeebies
+  -
+    company: Xpress Ordering
+    position: Product Specialist
+    start: Nov, 2004
+    end: Nov, 2007
+    description: |
+
+      Produced, maintained and enhanced and re-purposed Xpress Ordering’s kiosk ordering application. Developed key interface elements and aspects of the Firebird database. Developed a PHP administration tool.
+
+      Extended the kiosk application to include, amongst other functions, a customer survey and webcam functionality. Work included projects for; Orange, Brake Brothers, Natwest, Lloyds, RBS
+
+  -
+    company: Freelance
+    position: Web Developer / Designer
+    start: Nov, 1999
+    end: Nov, 2004
+    description: |
+
+      Built sites for various SMEs ranging from pubs / clubs to ad hoc work for Playboy UK and Gum Ball 3000.
+
+      Prior to embarking on my freelance career I worked as a Compliance tester for Microsoft working on the original Xbox release titles including PGR, Oddworld and Halo.    
 
 skills: 
 

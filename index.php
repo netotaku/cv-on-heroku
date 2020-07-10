@@ -55,9 +55,9 @@
             <section>
                 <h2>Social</h2>
                 <ul>
-                    <li><a href="<?=$data['contact']['twitter']?>"><?=$data['contact']['twitter']?></a></li>
-                    <li><a href="<?=$data['contact']['instagram']?>"><?=$data['contact']['instagram']?></a></li>
-                    <li><a href="<?=$data['contact']['strava']?>"><?=$data['contact']['strava']?></a></li>
+                    <li><a href="<?=$data['contact']['twitter']?>">Twitter</a></li>
+                    <li><a href="<?=$data['contact']['instagram']?>">Instagram</a></li>
+                    <li><a href="<?=$data['contact']['strava']?>">Strava</a></li>
                 </ul>
             </section>
 
@@ -66,8 +66,8 @@
             <?php foreach($data["work_experience"] as $job) : ?>    
                 <section>     
                     <h3 class="u-no-gutter"><?=$job["company"]?></h3>
-                    <h4><?=$job["position"]?></h4>
-                    <p><?=$job["start"]?> - <?=$job["end"]?></p>
+                    <h4 class="u-no-gutter"><?=$job["position"]?></h4>
+                    <p><em><?=$job["start"]?> - <?=$job["end"]?></em></p>
                     <?=Markdown::defaultTransform($job["description"])?>         
                 </section>
             <?php endforeach ?>

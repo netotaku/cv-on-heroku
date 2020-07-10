@@ -150,10 +150,14 @@ a:hover {
 html {
   font-size: 1.1em;
   background-color: #eee;
-  line-height: 1.6; }
+  line-height: 1.6;
+  color: #111; }
 
 h1:not(:last-child), h2:not(:last-child), h3:not(:last-child), h4:not(:last-child), h5:not(:last-child), h6:not(:last-child), p:not(:last-child), ul:not(:last-child), ol:not(:last-child), section:not(:last-child), header:not(:last-child), footer:not(:last-child) {
   margin-bottom: 20px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Tahoma; }
 
 ul, ol {
   margin-left: 20px; }
