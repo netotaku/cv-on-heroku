@@ -1,0 +1,50 @@
+$gutter: 20px;
+$small: 320px;
+$medium: 600px;
+$large: 1000px;
+
+@import "grid";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+}
+
+a:hover{
+    text-decoration: none;   
+}
+
+html{
+    font-size: 1.1em;
+    background-color: #eee;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, section, header, footer{
+    &:not(:last-child){
+        margin-bottom: $gutter;
+    }
+}
+
+ul,ol{
+    margin-left: $gutter;
+}
+
+.page{
+    background-color: #fff;
+    max-width: 850px;
+    padding: $gutter*2;
+}
+
+.skill-set{
+    margin-bottom: $gutter;    
+}
+
+
+.u-{
+    &no-gutter{
+        margin: 0px!important;
+    }
+}
+

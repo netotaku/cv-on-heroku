@@ -1,0 +1,126 @@
+@mixin grid-box-modifiers{
+    &-ful{
+        width: 100%;
+        max-width: 100%;
+    }
+    &-haf{
+        width: 50%;
+        max-width: 50%;
+    }
+    &-thd{
+        width: 33.33%;
+        max-width: 33.33%;
+        &-x2{
+            width: 66.66%;
+            max-width: 66.66%;
+        }
+    }        
+    &-fth{
+        width: 20%;
+        max-width: 20%;
+        &-x2{
+            width: 40%;
+            max-width: 40%;
+        }
+        &-x3{
+            width: 60%;
+            max-width: 60%;
+        }
+        &-x4{
+            width: 80%;
+            max-width: 80%;
+        }
+    }
+    &-qtr{
+        width: 25%;
+        max-width: 25%;
+        &-x2{
+            width: 50%;
+            max-width: 50%;
+        }
+        &-x3{
+            width: 75%;
+            max-width: 75%;
+        }
+    }               
+}
+
+///////////
+
+@mixin grid-modifiers{
+    &-dir{
+        &-row{
+            flex-direction: row;
+            &-rev{
+                flex-direction: row-reverse;
+            }               
+        }
+        &-col{
+            flex-direction: column;
+            &-rev{
+                flex-direction: column-reverse;
+            }               
+        }
+    }    
+}
+
+///////////
+
+.v2g{
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    &--gut{
+        padding: $gutter/2;
+    }
+
+    @media only screen and (min-width : $small) {
+        &--sml{
+            @include grid-modifiers;
+        }
+    }
+
+    @media only screen and (min-width : $medium) {
+        &--mid{
+            @include grid-modifiers;
+        }
+    }
+
+    @media only screen and (min-width : $large) {
+        &--lrg{
+            @include grid-modifiers;
+        }
+    }
+
+    &__box{
+        
+        width: 100%;
+        max-width: 100%;
+
+        @media only screen and (min-width : $small) { 
+            &--sml{
+               @include grid-box-modifiers;
+            } 
+        } 
+
+        @media only screen and (min-width : $medium) { 
+            &--mid{
+                @include grid-box-modifiers;                         
+            } 
+        }         
+        
+        @media only screen and (min-width : $large) {     
+            &--lrg{
+                @include grid-box-modifiers;
+            }
+        }
+        
+        &__gut{
+            margin: $gutter/2;
+        }
+        
+    }
+
+}

@@ -6,32 +6,33 @@ personal_statement: |
   
   He lives in Bristol and has two sons Daniel and Alex.
 contact:
-   - twitter: "@t_pk"
-   - instagram: "clar.ky"
-   - strava: ""
-   - phone: "+44 (0) 7771 535 355"
-   - email: "nick@clarkson.io"
-   - website: "https://clar.ky"
+  twitter: "https://twitter.com/t_pk"
+  instagram: "https://instagram.com/clar.ky"
+  strava: "https://www.strava.com/athletes/18818524"
+  phone: "+44 (0) 7771 535 355"
+  email: "nick@clarkson.io"
+  website: "https://clar.ky"
 work_experience: 
   - 
     company: Halo
     position: Technical / Digital Director
-    start: Jul, 2018
+    start: 1530403200
     end: Current
     description: |
+
       Running the digital team and setting the pace on digital strategy and technical direction in the context of brand and user requirements. My role has included recruitment and resourcing, team management of a multi-disciplined digital team, including web development, UX, social media management and strategy and project management. Formulating, implementing and selling an integrated digital vision for Halo’s clients and working at a board level on agency positioning and direction.
 
       I am client facing and I have successfully pitched for and won various digital projects. I have also been instrumental in creating strategies to open existing accounts and remain responsible for the overall digital target and budget.
 
       While my role is strategic I am still very much involved in the day to day delivery of the department. From project management and scoping and estimating through to ad-hoc development tasks.
 
-      We are industry agnostic working with clients from Hospitality and Entertainment through to eComm and High Tech. They include: Live Nation / Ticketmaster, Turtle Bay, Bart Spices, Download Festival, Wireless festival, Ombudsman Services, NLWA and Magna Housing.
+      We are industry agnostic working with clients from Hospitality and Entertainment through to eComm and High Tech. They include; Live Nation / Ticketmaster, Turtle Bay, Bart Spices, Download Festival, Wireless festival, Ombudsman Services, NLWA and Magna Housing.
 
   - 
     company: NMI
     position: Head of Digital
-    start: Feb, 2016
-    end: Jul, 2018
+    start: 1454284800
+    end: 1530403200
     description: |
 
       Working closely with the Head of Marketing, I have devised the last 2 year-out digital strategies for the brand and since the recent acquisition of Creditcall I have devised and run the user research project that will inform a rebrand, a company positioning realignment and the ongoing development of the platform and the iterations thereof. I run an elastic team that includes UX, web development, design and E-CRM / Digital Marketing.
@@ -42,7 +43,83 @@ work_experience:
 
       I have brought new development and team workflow principles to Creditcall along with with a focus on iterative, user-centric development, while adhering to strict security standards.
 
-skills_clouds: ""
+skills: 
+
+  CMS:
+    - CraftCMS
+    - Wordpress / Woocommerce    
+    - Ghost
+    - Jekyll
+    - Shopify
+  Infrastucture:
+    - AWS
+    - Heroku
+    - Apache
+    - Nginx 
+    - Ddev / Docker
+    - Cloudflare
+  Backend:
+    - PHP
+    - Ruby
+    - Node
+  Frontend:
+    - CSS / BEM
+    - SCSS
+    - Javascript
+    - Vue
+    - jQuery
+    - HTML
+    - Canvas
+  Optimisation:
+    - Webperf
+    - SEO
+    - Accessibilty
+  Data:
+    - YAML
+    - XML
+    - JSON
+    - MySQL / MariaDB
+    - REST
+    - Contentful
+  MVC:
+    - Laravel
+    - Rails
+  Soft:
+    - Digital Marketing
+    - Digital Strategy
+    - Web Design
+    - Account Managment
+  Templating:
+    - Twig
+    - Blade
+    - Liquid
+  Versioning:
+    - Git / Flow
+    - SVN
+  OS:
+    - OSX
+    - Linux
+  CRM:
+    - Salesforce
+    - Pardot
+    - Mailchimp
+  APIs:
+    - Gdata
+    - Spotify
+    - Facebook
+    - Twitter
+    - Instagram
+    - Google Maps
+  Tools:
+    - Sprout Social
+    - SEMRush
+    - Invision
+    - Sketch
+    - XD
+    - Google Analytics
+    - Google Search Console 
+
+education: ""
 hobbies_and_interests: ""
 
 # 9:30 10:00 
