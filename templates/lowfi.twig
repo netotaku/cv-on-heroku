@@ -5,7 +5,7 @@
     </head>
     <body>
 
-        <article>
+        <article class="article">
 
             <div class="cols">
 
@@ -82,21 +82,21 @@
                             <p>{{ skill | join(', ') }}</p>
                         {% endfor %}
 
+                        <h2>Socials</h2>
+
+                        <ul>
+                            <li><a href="{{ contact.twitter }}">Twitter</a></li>
+                            <li><a href="{{ contact.instagram }}">Instagram</a></li>
+                            <li><a href="{{ contact.strava }}">Strava</a></li>
+                            <li><a href="/cv.yml">YAML</a></li>
+                        </ul>  
+
                     </div> <!-- /.gutter -->
 
                 </aside>
 
             </div> <!-- /.cols -->
-
-            <footer>                     
-                <ul>
-                    <li><a href="{{ contact.twitter }}">Twitter</a></li>
-                    <li><a href="{{ contact.instagram }}">Instagram</a></li>
-                    <li><a href="{{ contact.strava }}">Strava</a></li>
-                    <li><a href="/cv.yml">YAML</a></li>
-                </ul>                
-            </footer>
-
+            
         </article>
 
     </body>

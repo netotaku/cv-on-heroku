@@ -65,16 +65,23 @@ $large: 1000px;
 //     // column-fill: balance;
 // }
 
+html, body{
+    height: 100%;
+    background: #eee;
+    padding: 0px;
+    margin: 0px;
+}
+
 .cols{
     display: flex;
     &__col{
         &--left{
-            width: 75%;
-            max-width: 75%;
+            width: 70%;
+            max-width: 70%;
         }
         &--right{
-            width: 25%;
-            max-width: 25%;
+            width: 30%;
+            max-width: 30%;
         }
     }
 }
@@ -83,4 +90,9 @@ $large: 1000px;
     &gutter{
         padding: $gutter;
     }
+}
+
+.article{
+    max-width: 1000px;
+    background: #fff;
 }

@@ -139,16 +139,26 @@
     .v2g__box__gut {
       margin: 10px; }
 
+html, body {
+  height: 100%;
+  background: #eee;
+  padding: 0px;
+  margin: 0px; }
+
 .cols {
   display: flex; }
   .cols__col--left {
-    width: 75%;
-    max-width: 75%; }
+    width: 70%;
+    max-width: 70%; }
   .cols__col--right {
-    width: 25%;
-    max-width: 25%; }
+    width: 30%;
+    max-width: 30%; }
 
 .u-gutter {
   padding: 20px; }
+
+.article {
+  max-width: 1000px;
+  background: #fff; }
 
 /*# sourceMappingURL=main.css.map */
