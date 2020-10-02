@@ -5,52 +5,82 @@ $large: 1000px;
 
 @import "grid";
 
-* {
-    padding: 0px;
-    margin: 0px;
-    position: relative;
-}
+// * {
+//     padding: 0px;
+//     margin: 0px;
+//     position: relative;
+// }
 
-a:hover{
-    text-decoration: none;   
-}
+// a:hover{
+//     text-decoration: none;   
+// }
 
-html{
-    font-size: 1.1em;
-    background-color: #eee;
-    line-height: 1.6;
-    color: #111;
-    // font-family: 'Courier New', Courier, monospace;
-}
+// html{
+//     font-size: 1.1em;
+//     background-color: #eee;
+//     line-height: 1.6;
+//     color: #111;
+//     // font-family: 'Courier New', Courier, monospace;
+// }
 
-h1, h2, h3, h4, h5, h6, p, ul, ol, section, header, footer{
-    &:not(:last-child){
-        margin-bottom: $gutter;
+// h1, h2, h3, h4, h5, h6, p, ul, ol, section, header, footer, hr{
+//     &:not(:last-child){
+//         margin-bottom: $gutter;
+//     }
+// }
+
+// h1, h2, h3, h4, h5, h6{
+//    // font-family: Tahoma;
+// }
+
+// ul,ol{
+//     margin-left: $gutter;
+// }
+
+// .page{
+//     background-color: #fff;
+//     max-width: 850px;
+//     padding: $gutter*2;
+// }
+
+// .skill-set{
+//     margin-bottom: $gutter;    
+// }
+
+
+// .u-{
+//     &no-gutter{
+//         margin: 0px!important;
+//     }
+//     &bottom-border{
+//         border-bottom: solid 3px #ccc;
+//     }
+//     &top-border{
+//         border-top: solid 3px #ccc;
+//     }
+// }
+
+// .cols{
+//     // column-count: 3;
+//     // column-fill: balance;
+// }
+
+.cols{
+    display: flex;
+    &__col{
+        &--left{
+            width: 75%;
+            max-width: 75%;
+        }
+        &--right{
+            width: 25%;
+            max-width: 25%;
+        }
     }
 }
-
-h1, h2, h3, h4, h5, h6{
-    font-family: Tahoma;
-}
-
-ul,ol{
-    margin-left: $gutter;
-}
-
-.page{
-    background-color: #fff;
-    max-width: 850px;
-    padding: $gutter*2;
-}
-
-.skill-set{
-    margin-bottom: $gutter;    
-}
-
 
 .u-{
-    &no-gutter{
-        margin: 0px!important;
+    &gutter{
+        padding: $gutter;
     }
 }
-

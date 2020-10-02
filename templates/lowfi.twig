@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        {% include 'partials/head.twig' %}
+    </head>
+    <body>
+
+        <article>
+
+            <div class="cols">
+
+                <div class="cols__col cols__col--left">   
+
+                    <div class="u-gutter">     
+
+                        <header>
+                            <h1>{{ name }}</h1>
+                            <h2>{{ title }}</h2>
+                            <h3>{{ location }}</h3>
+                            <p><em>Last update / {{ last_updated | format_date }}</em></p>
+                        </header>
+
+                        <div role="main">
+
+                            {{ personal_statement | markdown | raw }}
+
+                            <hr>
+
+                            <h2>Work experience</h2>
+
+                            {% for job in work_experience %}
+                                <section>     
+                                    <h3>
+                                        {% if job.link %}
+                                            <a href="{{ job.link }}" target="_blank">
+                                                {{ job.company }}</a>
+                                        {% else %}
+                                            {{ job.company }}
+                                        {% endif %}
+                                    </h3>
+                                    <h4>{{ job.position }}</h4>
+                                    <p><em>{{ job.start | format_date }} - {{ job.end | format_date }}</em></p>
+                                    {{ job.description | markdown | raw }}                            
+                                </section>
+                            {% endfor %}
+
+                            <hr>
+
+                            <h2>Education</h2>
+
+                            {% for qualification in education %}
+                                <section>
+                                    <h3>{{ qualification.course }}</h3>
+                                    <h4>{{ qualification.school }}</h4>
+                                    <p><em>{{ qualification.start | format_date }} - {{ qualification.end | format_date }}</em></p>
+                                    {{ qualification.description | markdown | raw }}
+                                </section>
+                            {% endfor %}
+
+                        </div>  <!-- /[main] --> 
+
+                    </div> <!-- /.gutter -->
+
+                </div>
+
+                <aside class="cols__col cols__col--right">
+
+                    <div class="u-gutter">
+
+                        <h2>Awards</h2>
+
+                        {% for award in awards %}
+                            {{ award | markdown | raw }}
+                        {% endfor %}
+
+                        <hr>
+                        
+                        <h2>Skills</h2>
+
+                        {% for key,skill in skills %}
+                            <h3>{{ key }}</h3>
+                            <p>{{ skill | join(', ') }}</p>
+                        {% endfor %}
+
+                    </div> <!-- /.gutter -->
+
+                </aside>
+
+            </div> <!-- /.cols -->
+
+            <footer>                     
+                <ul>
+                    <li><a href="{{ contact.twitter }}">Twitter</a></li>
+                    <li><a href="{{ contact.instagram }}">Instagram</a></li>
+                    <li><a href="{{ contact.strava }}">Strava</a></li>
+                </ul>                
+            </footer>
+
+        </article>
+
+    </body>
+</html>

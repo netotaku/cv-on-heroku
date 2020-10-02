@@ -19,6 +19,7 @@ work_experience:
     position: Technical / Digital Director
     start: 1530403200
     end: Current
+    link: https://wearehalo.co.uk
     description: |
 
       Running the digital team and setting the pace on digital strategy and technical direction in the context of brand and user requirements. My role has included recruitment and resourcing, team management of a multi-disciplined digital team, including web development, UX, social media management and strategy and project management. Formulating, implementing and selling an integrated digital vision for Halo’s clients and working at a board level on agency positioning and direction.
@@ -27,13 +28,14 @@ work_experience:
 
       While my role is strategic I am still very much involved in the day to day delivery of the department. From project management and scoping and estimating through to ad-hoc development tasks.
 
-      We are industry agnostic working with clients from Hospitality and Entertainment through to eComm and High Tech. They include; Live Nation / Ticketmaster, Turtle Bay, Bart Spices, Download Festival, Wireless festival, Ombudsman Services, NLWA and Magna Housing.
+      We are industry agnostic working with clients from Hospitality and Entertainment through to eComm and High Tech. _They include; Live Nation / Ticketmaster, Turtle Bay, Bart Spices, Download Festival, Wireless festival, Ombudsman Services, NLWA and Magna Housing._
 
   - 
     company: NMI
     position: Head of Digital
     start: 1454284800
     end: 1530403200
+    link: https://www.nmi.com
     description: |
 
       Working closely with the Head of Marketing, I have devised the last 2 year-out digital strategies for the brand and since the recent acquisition of Creditcall I have devised and run the user research project that will inform a rebrand, a company positioning realignment and the ongoing development of the platform and the iterations thereof. I run an elastic team that includes UX, web development, design and E-CRM / Digital Marketing.
@@ -47,64 +49,65 @@ work_experience:
     company: AUK
     position: Technical Director
     start: 1454284800
-    end: 1530403200    
+    end: 1530403200 
+    link: https://agencyuk.com   
     description: |
     
-      Headed up the technical department for AUK (formerly Agency UK). Ran a growing team of 6 developers. Spending quality time with current and prospective clients. In the pursuit of enjoyable and good works building web sites and web applications. Work included projects for: Welsh Meat, BSM, Ladbrokes, Pentathlon GB, Quintiles.
+      Headed up the technical department for AUK (formerly Agency UK). Ran a growing team of 6 developers. Spending quality time with current and prospective clients. In the pursuit of enjoyable and good works building web sites and web applications. Work included projects for: _Welsh Meat, BSM, Ladbrokes, Pentathlon GB, Quintiles_.
   - 
     company: G+V
     position: Head of Development
-    start: Nov, 2012
-    end: Nov, 2014   
+    start: 1351728000
+    end: 1454284800  
+    link: https://www.goramandvincent.com/
     description: |
     
-      Charged with agency technical direction. Instrumental in winning National Pitches. Championed solutions based approach and cross discipline collaboration within the business. Built, maintained and supported the development team. Work included projects for: Brothers Cider, Drinkaware, Continental Tyres, NOS. ISTRUCT, British Medical Journal, Zettics
+      Charged with agency technical direction. Instrumental in winning National Pitches. Championed solutions based approach and cross discipline collaboration within the business. Built, maintained and supported the development team. Work included projects for: _Brothers Cider, Drinkaware, Continental Tyres, NOS. ISTRUCT, British Medical Journal, Zettics_.
   - 
     company: Great State
     position: Senior Interface Developer
-    start: Nov, 2011
-    end: Nov, 2012 
+    start: 1320105600
+    end: 1351728000 
+    link: https://www.greatstate.co/
     description: |
     
-      Created thick web interfaces and mobile applications. Took a lead role in the delivery of technical projects. Nurtured / advised junior members of the Development team. Contributed to process work groups. Work included projects for: Kia, Land Rover, Orange, The Royal Navy and The National Trust.
+      Created thick web interfaces and mobile applications. Took a lead role in the delivery of technical projects. Nurtured / advised junior members of the Development team. Contributed to process work groups. Work included projects for: _Kia, Land Rover, Orange, The Royal Navy and The National Trust_.
 
-      Won Drum Awards for Digital Industries 2015 - Best Not for Profit Website For The National Trust 50 Things Campaign
   -
     company: Digital Visitor
     position: Development Manager
-    start: Nov, 2010
-    end: Nov, 2011
+    start: 1288569600
+    end: 1320105600
+    link: https://digitalvisitor.com/
     description: |
       
-      Built Visitor Review, an integrated social media platform with a customer review element. Took a lead role in developing a RESTful API and a highly configurable REST client. Developed a suite of Javascript widgets which allow content editors to install social and review functions to their web sites. Work included projects for: Enjoy England, Joules Verne Voyages, London Clubs International.
-
-      Won Travolution Awards 2011 - Best Online Application For my work with Visitor Review.
+      Built Visitor Review, an integrated social media platform with a customer review element. Took a lead role in developing a RESTful API and a highly configurable REST client. Developed a suite of Javascript widgets which allow content editors to install social and review functions to their web sites. Work included projects for: _Enjoy England, Joules Verne Voyages, London Clubs International_.
+      
   -
     company: Freelance
     position: Web Developer / Designer
-    start: Nov, 2007
-    end: Nov, 2011
+    start: 1193875200
+    end: 1288569600
     description: |
       
-      As a freelancer I worked on a wide range of projects from intranets to eLearning applications. I bid for and won these projects and managed their delivery. Work included projects for: Telstra, Minervation, Oxford University, Scottish NHS, Thames Valley NHS, British Cardiology Society, King and Allen Talis, Team Rubber.
+      As a freelancer I worked on a wide range of projects from intranets to eLearning applications. I bid for and won these projects and managed their delivery. Work included projects for: _Telstra, Minervation, Oxford University, Scottish NHS, Thames Valley NHS, British Cardiology Society, King and Allen, Talis, Team Rubber_.
 
-      Won 2010 IVCA - Best Interactive For a Flash eLearning application designed & developed for Rethink (The National Schizophrenia Society) in conjunction with Minervation and Seafood. The competition included Channel 4 and CBeebies
   -
     company: Xpress Ordering
     position: Product Specialist
-    start: Nov, 2004
-    end: Nov, 2007
+    start: 1414800000
+    end: 1193875200
     description: |
 
       Produced, maintained and enhanced and re-purposed Xpress Ordering’s kiosk ordering application. Developed key interface elements and aspects of the Firebird database. Developed a PHP administration tool.
 
-      Extended the kiosk application to include, amongst other functions, a customer survey and webcam functionality. Work included projects for; Orange, Brake Brothers, Natwest, Lloyds, RBS
+      Extended the kiosk application to include, amongst other functions, a customer survey and webcam functionality. Work included projects for; _Orange, Brake Brothers, Natwest, Lloyds, RBS_
 
   -
     company: Freelance
     position: Web Developer / Designer
-    start: Nov, 1999
-    end: Nov, 2004
+    start: 941414400
+    end: 1414800000
     description: |
 
       Built sites for various SMEs ranging from pubs / clubs to ad hoc work for Playboy UK and Gum Ball 3000.
@@ -119,6 +122,7 @@ skills:
     - Ghost
     - Jekyll
     - Shopify
+    - Squarespace
   Infrastucture:
     - AWS
     - Heroku
@@ -187,8 +191,28 @@ skills:
     - Google Analytics
     - Google Search Console 
 
-education: ""
+education:
+  -
+    school: Kingston University
+    course: Computing Systems
+    start: 778377600
+    end: 873072000
+    description: |
+
+      My degree course covered Computer Science, Maths and Digital and Analogue Electronics.
+
 hobbies_and_interests: ""
 
-# 9:30 10:00 
-# 12:30 
+awards: 
+  - | 
+      **2015**  
+      ### Drum Awards for Digital Industries  
+      Best Not for Profit Website For The National Trust 50 Things Campaign
+  - |
+      **2010**  
+      ### IVCA  
+      Best Interactive For a Flash eLearning application designed & developed for Rethink (The National Schizophrenia Society) in conjunction with Minervation and Seafood.
+  - |
+      **2011**  
+      ### Travolution Awards  
+      Best Online Application For Visitor Review.

@@ -139,38 +139,16 @@
     .v2g__box__gut {
       margin: 10px; }
 
-* {
-  padding: 0px;
-  margin: 0px;
-  position: relative; }
+.cols {
+  display: flex; }
+  .cols__col--left {
+    width: 75%;
+    max-width: 75%; }
+  .cols__col--right {
+    width: 25%;
+    max-width: 25%; }
 
-a:hover {
-  text-decoration: none; }
-
-html {
-  font-size: 1.1em;
-  background-color: #eee;
-  line-height: 1.6;
-  color: #111; }
-
-h1:not(:last-child), h2:not(:last-child), h3:not(:last-child), h4:not(:last-child), h5:not(:last-child), h6:not(:last-child), p:not(:last-child), ul:not(:last-child), ol:not(:last-child), section:not(:last-child), header:not(:last-child), footer:not(:last-child) {
-  margin-bottom: 20px; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: Tahoma; }
-
-ul, ol {
-  margin-left: 20px; }
-
-.page {
-  background-color: #fff;
-  max-width: 850px;
-  padding: 40px; }
-
-.skill-set {
-  margin-bottom: 20px; }
-
-.u-no-gutter {
-  margin: 0px !important; }
+.u-gutter {
+  padding: 20px; }
 
 /*# sourceMappingURL=main.css.map */
