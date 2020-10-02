@@ -6,41 +6,31 @@
     use Symfony\Component\Yaml\Yaml;
 
     $data = Yaml::parseFile('cv.yml');
-    $data['last_updated'] = $last_updated;
-    $data['cache_buster'] = $cache_buster;
 
-    function format($dt){
-
-    }
+    $data['last_updated'] = filemtime('cv.yml');
+    $data['cache_buster'] = filemtime('assets/css/main.css');
 
     ////////////
-
-    $loader = new \Twig\Loader\FilesystemLoader('templates');
-
-    $twig = new \Twig\Environment($loader, [
+    
+    $twig = new \Twig\Environment(new \Twig\Loader\FilesystemLoader('templates'), [
         'cache' => false // 'templates_cache',
     ]);
 
-
     // filters
 
-    $filter = new \Twig\TwigFilter('format_date', function ($dt) {
+    $twig->addFilter(new \Twig\TwigFilter('format_date', function ($dt) {
         $o = "Current";
         if($dt != 'Current'){
             $o = gmdate("M, Y", $dt); 
         }
         return $o;
-    });
-
-    $twig->addFilter($filter);
+    }));
 
     //////////
 
-    $filter = new \Twig\TwigFilter('markdown', function ($string) {
+    $twig->addFilter(new \Twig\TwigFilter('markdown', function ($string) {
         return Markdown::defaultTransform($string);
-    });
-
-    $twig->addFilter($filter);
+    }));
 
     // render
 
