@@ -72,19 +72,19 @@ html, body{
     margin: 0px;
 }
 
-.cols{
-    display: flex;
-    &__col{
-        &--left{
-            width: 70%;
-            max-width: 70%;
-        }
-        &--right{
-            width: 30%;
-            max-width: 30%;
-        }
-    }
-}
+// .cols{
+//     display: flex;
+//     &__col{
+//         &--left{
+//             width: 70%;
+//             max-width: 70%;
+//         }
+//         &--right{
+//             width: 30%;
+//             max-width: 30%;
+//         }
+//     }
+// }
 
 .u-{
     &gutter{

@@ -145,15 +145,6 @@ html, body {
   padding: 0px;
   margin: 0px; }
 
-.cols {
-  display: flex; }
-  .cols__col--left {
-    width: 70%;
-    max-width: 70%; }
-  .cols__col--right {
-    width: 30%;
-    max-width: 30%; }
-
 .u-gutter {
   padding: 20px; }
 
