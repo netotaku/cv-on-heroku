@@ -1,0 +1,32 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    line-height: 1.6;    
+}
+
+body, html{
+    height: 100%;
+    font-size: 1.1em;        
+}
+
+ul, ol{
+    list-style-type: none;
+}
+
+p{
+    &:not(:last-child){
+        margin-bottom: 20px;
+    } 
+}
+
+a{
+    color: blue;
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+h1{
+    font-size: 2.6em;
+}

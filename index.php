@@ -11,7 +11,7 @@
     $data['cache_buster'] = filemtime('assets/css/main.css');
 
     ////////////
-    
+
     $twig = new \Twig\Environment(new \Twig\Loader\FilesystemLoader('templates'), [
         'cache' => false // 'templates_cache',
     ]);
@@ -34,6 +34,6 @@
 
     // render
 
-    echo $twig->render('lowfi.twig', $data);
+    echo $twig->render('hifi.twig', $data);
 
 ?>

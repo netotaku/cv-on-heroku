@@ -1,98 +1,20 @@
-$gutter: 20px;
-$small: 320px;
-$medium: 600px;
-$large: 1000px;
 
-@import "grid";
+@import "globals";
 
-// * {
-//     padding: 0px;
-//     margin: 0px;
-//     position: relative;
-// }
-
-// a:hover{
-//     text-decoration: none;   
-// }
-
-// html{
-//     font-size: 1.1em;
-//     background-color: #eee;
-//     line-height: 1.6;
-//     color: #111;
-//     // font-family: 'Courier New', Courier, monospace;
-// }
-
-// h1, h2, h3, h4, h5, h6, p, ul, ol, section, header, footer, hr{
-//     &:not(:last-child){
-//         margin-bottom: $gutter;
-//     }
-// }
-
-// h1, h2, h3, h4, h5, h6{
-//    // font-family: Tahoma;
-// }
-
-// ul,ol{
-//     margin-left: $gutter;
-// }
-
-// .page{
-//     background-color: #fff;
-//     max-width: 850px;
-//     padding: $gutter*2;
-// }
-
-// .skill-set{
-//     margin-bottom: $gutter;    
-// }
-
-
-// .u-{
-//     &no-gutter{
-//         margin: 0px!important;
-//     }
-//     &bottom-border{
-//         border-bottom: solid 3px #ccc;
-//     }
-//     &top-border{
-//         border-top: solid 3px #ccc;
-//     }
-// }
-
-// .cols{
-//     // column-count: 3;
-//     // column-fill: balance;
-// }
-
-html, body{
-    height: 100%;
-    background: #eee;
-    padding: 0px;
-    margin: 0px;
-}
-
-// .cols{
-//     display: flex;
-//     &__col{
-//         &--left{
-//             width: 70%;
-//             max-width: 70%;
-//         }
-//         &--right{
-//             width: 30%;
-//             max-width: 30%;
-//         }
-//     }
-// }
-
-.u-{
-    &gutter{
-        padding: $gutter;
+@media screen and (max-width: 1000px) {
+    body{
+        padding: 0px 10px;
     }
+    footer{
+        margin-top: 10px;
+    }
+    @for $index from 1 through 6 {
+        h#{$index}{
+          margin: 10px 0;
+        }
+    }    
 }
 
-.article{
-    max-width: 1000px;
-    background: #fff;
+@media screen and (min-width: 1000px) {
+    @import "grid";
 }

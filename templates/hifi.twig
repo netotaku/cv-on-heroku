@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        {% include 'partials/head.twig' %}
+    </head>
+    <body>
+        <article class="grid">
+            
+            <header class="grid__unit grid__unit--2-5">
+                <h1>{{ name }}</h1>
+                <h2>{{ title }}</h2>
+                <h3>{{ location }}</h3>            
+            </header>
+
+            <div class="grid__unit grid__unit--2-3">
+                <h2>Introduction</h2>
+            </div>
+
+            <div class="grid__unit grid__unit--3-5">
+                {{ personal_statement | markdown | raw }}
+            </div>   
+
+            <div class="grid__unit grid__unit--2-3">
+                <h2>Experience</h2>
+            </div>         
+
+            {% for job in work_experience %}
+
+                <div class="grid__unit grid__unit--3-4">                                        
+                    <h3>
+                        {% if job.link %}
+                            <a href="{{ job.link }}" target="_blank">
+                                {{ job.company }}</a>
+                        {% else %}
+                            {{ job.company }}
+                        {% endif %}
+                    </h3>
+                    <h4>{{ job.position }}</h4>
+                    <p><em>{{ job.start | format_date }} - {{ job.end | format_date }}</em></p>
+                </div> 
+
+                <div class="grid__unit grid__unit--4-5"> 
+                    {{ job.description | markdown | raw }}  
+                </div>                         
+            
+            {% endfor %}
+
+            <div class="grid__unit grid__unit--2-3">
+                <h2>Skills</h2>
+            </div>  
+
+            <div class="grid__unit grid__unit--3-5">
+                {% for key,skill in skills %}
+                    <h3>{{ key }}</h3>
+                    <p>{{ skill | join(', ') }}</p>
+                {% endfor %}
+            </div>             
+
+            <div class="grid__unit grid__unit--2-3">
+                <h2>Awards</h2>
+            </div>  
+
+            <div class="grid__unit grid__unit--3-5">
+                {% for award in awards %}
+                    {{ award | markdown | raw }}
+                {% endfor %}
+            </div>              
+
+            <div class="grid__unit grid__unit--2-3">
+                <h2>Education</h2>
+            </div>  
+
+            <div class="grid__unit grid__unit--3-5">
+                {% for qualification in education %}
+                    <h3>{{ qualification.course }}</h3>
+                    <h4>{{ qualification.school }}</h4>
+                    <p><em>{{ qualification.start | format_date }} - {{ qualification.end | format_date }}</em></p>
+                    {{ qualification.description | markdown | raw }}
+                {% endfor %}                
+            </div>  
+            
+            <footer class="grid__unit grid__unit--2-5">
+                <ul>
+                    <li><a href="{{ contact.twitter }}">Twitter</a></li>
+                    <li><a href="{{ contact.instagram }}">Instagram</a></li>
+                    <li><a href="{{ contact.strava }}">Strava</a></li>                            
+                </ul>  
+                <p><em>Last update / {{ last_updated | format_date }}</em></p>
+                <p>If you are interested in how this page works, you can <a href="https://github.com/netotaku/cv-on-heroku">view the code here</a>.</p>
+            </footer>
+                            
+        </article> <!-- /.grid -->
+
+    </body>
+</html>
