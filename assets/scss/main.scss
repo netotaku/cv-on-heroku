@@ -1,20 +1,7 @@
-
+$blue: #007bff;
+$grey: #666666;
+$gutter: 20px;
+$break: 1000px;
 @import "globals";
-
-@media screen and (max-width: 1000px) {
-    body{
-        padding: 0px 10px;
-    }
-    footer{
-        margin-top: 10px;
-    }
-    @for $index from 1 through 6 {
-        h#{$index}{
-          margin: 10px 0;
-        }
-    }    
-}
-
-@media screen and (min-width: 1000px) {
-    @import "grid";
-}
+@import "grid";
+@import "utilities";

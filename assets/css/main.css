@@ -23,48 +23,36 @@ h1 {
   font-size: 2.6em;
   line-height: 1; }
 
+h2 {
+  line-height: 1.3; }
+
 h1 {
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  letter-spacing: -.6px; }
 
 h2 {
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  letter-spacing: -.6px; }
 
 h3 {
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  letter-spacing: -.6px; }
 
 h4 {
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  letter-spacing: -.6px; }
 
 h5 {
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  letter-spacing: -.6px; }
 
 h6 {
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  letter-spacing: -.6px; }
 
 @media screen and (max-width: 1000px) {
   body {
-    padding: 0px 10px; }
-
-  footer {
-    margin-top: 10px; }
-
-  h1 {
-    margin: 10px 0; }
-
-  h2 {
-    margin: 10px 0; }
-
-  h3 {
-    margin: 10px 0; }
-
-  h4 {
-    margin: 10px 0; }
-
-  h5 {
-    margin: 10px 0; }
-
-  h6 {
-    margin: 10px 0; } }
+    padding: 20px; } }
 @media screen and (min-width: 1000px) {
   .grid {
     display: grid;
@@ -81,5 +69,13 @@ h6 {
       grid-column: 4 / 5; }
     .grid__unit--2-5 {
       grid-column: 2 / 5; } }
+
+.u-grey {
+  color: #666666; }
+.u-inline {
+  display: inline; }
+@media screen and (max-width: 1000px) {
+  .u-mobile-hr {
+    margin-bottom: 20px; } }
 
 /*# sourceMappingURL=main.css.map */
