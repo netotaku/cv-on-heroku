@@ -43,6 +43,12 @@ h2{
     }
 }  
 
+.vcard{
+    width: 120px;
+    height: auto;
+    display: block;
+}
+
 
 @media screen and (max-width: $break) {  
     body{
