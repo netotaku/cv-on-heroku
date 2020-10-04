@@ -1,0 +1,18 @@
+.u-{
+    &mobile-{
+
+    }
+    &grey{
+        color: $grey;
+    }
+    &inline{
+        display: inline;
+    }
+    @media screen and (max-width: $break) {  
+        &mobile-{
+            &hr{
+                margin-bottom: $gutter;
+            }
+        }
+    }
+}
