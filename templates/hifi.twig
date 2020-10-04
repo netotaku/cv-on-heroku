@@ -37,7 +37,7 @@
                         {% endif %}
                     </h3>
                     <h4>{{ job.position }}</h4>
-                    <p class="u-mobile-hr u-grey"><em>{{ job.start | format_date }} - {{ job.end | format_date }}</em></p>
+                    <p class="u-mobile-hr u-grey"><em><time datetime="{{ job.start }}">{{ job.start | format_date }}</time> - <time datetime="{{ job.end }}">{{ job.end | format_date }}</time></em></p>
                 </div> 
 
                 <div class="grid__unit grid__unit--4-5 u-mobile-hr"> 
@@ -88,7 +88,7 @@
                     <li class="u-inline"><a href="{{ contact.linkedin }}">LinkedIn</a></li>
                     <li class="u-inline"><a href="{{ contact.strava }}">Strava</a></li>                            
                 </ul>  
-                <p class="u-grey"><em>Last update / {{ last_updated | format_date }}</em></p>                
+                <p class="u-grey"><em>Last update / <time datetime="{{ last_updated }}">{{ last_updated | format_date }}</time></em></p>                
             </footer>
                             
         </article> <!-- /.grid -->
