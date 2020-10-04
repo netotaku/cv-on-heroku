@@ -13,6 +13,7 @@ contact:
   email: "nick@clarkson.io"
   website: "https://clar.ky"
   github: "https://github.com/netotaku/cv-on-heroku"
+  linkedin: https://www.linkedin.com/in/nicholasclarkson/
 
 work_experience: 
   - 
@@ -117,10 +118,24 @@ work_experience:
 
 skills: 
   Soft:
+    - Technical Leadership
     - Digital Marketing
     - Digital Strategy
+    - Agency Strategy and Direction
     - Web Design
     - Account Managment  
+    - Business Development
+    - Team cohesion and work flow
+    - People Management
+    - Project Management
+    - Coaching
+    - Recruitment
+    - Negotiation
+    - Conflict resolution
+    - Public Speaking
+    - Scoping, Briefing and estimation
+    - Working with confidential and sensitive issues
+    - Pitching
   CMS:
     - CraftCMS
     - Wordpress / Woocommerce    

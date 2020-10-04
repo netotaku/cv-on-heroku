@@ -15,12 +15,31 @@ p:not(:last-child) {
   margin-bottom: 20px; }
 
 a {
-  color: blue; }
+  color: #007bff; }
   a:hover {
     text-decoration: none; }
 
 h1 {
-  font-size: 2.6em; }
+  font-size: 2.6em;
+  line-height: 1; }
+
+h1 {
+  font-family: sans-serif; }
+
+h2 {
+  font-family: sans-serif; }
+
+h3 {
+  font-family: sans-serif; }
+
+h4 {
+  font-family: sans-serif; }
+
+h5 {
+  font-family: sans-serif; }
+
+h6 {
+  font-family: sans-serif; }
 
 @media screen and (max-width: 1000px) {
   body {

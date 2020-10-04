@@ -21,7 +21,7 @@ p{
 }
 
 a{
-    color: blue;
+    color: #007bff;
     &:hover{
         text-decoration: none;
     }
@@ -29,4 +29,11 @@ a{
 
 h1{
     font-size: 2.6em;
+    line-height: 1;
 }
+
+@for $index from 1 through 6 {
+    h#{$index}{      
+      font-family: sans-serif;
+    }
+}  
