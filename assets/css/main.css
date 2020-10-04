@@ -69,7 +69,13 @@ img {
 
 @media screen and (max-width: 1000px) {
   article {
-    padding: 20px; } }
+    padding: 20px; }
+
+  .hero {
+    height: 100vw; }
+
+  .headline {
+    font-size: .7em; } }
 @media screen and (min-width: 1000px) {
   .grid {
     display: grid;
