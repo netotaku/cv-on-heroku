@@ -5,6 +5,7 @@
         <!-- If you are interested in how this page works, you can view the code here: https://github.com/netotaku/cv-on-heroku. -->
     </head>
     <body>
+        <div class="hero"></div>
         <article class="grid">
             
             <header class="grid__unit grid__unit--2-5 u-mobile-hr">
@@ -78,7 +79,15 @@
                     <p class="u-grey"><em>{{ qualification.start | format_date }} - {{ qualification.end | format_date }}</em></p>
                     {{ qualification.description | markdown | raw }}
                 {% endfor %}                
+            </div> 
+
+            <div class="grid__unit grid__unit--2-3 u-mobile-hr">
+                <h2>Interests</h2>
             </div>  
+
+            <div class="grid__unit grid__unit--3-5 u-mobile-hr">               
+                {{ hobbies_and_interests | join(', ') | markdown | raw }}              
+            </div>                
             
             <footer class="grid__unit grid__unit--2-5 u-mobile-hr">
                 <p><img class="vcard" alt="vcard" src="/assets/images/vcard.png" /></p>
