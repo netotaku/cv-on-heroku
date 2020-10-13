@@ -1,4 +1,4 @@
-sass --watch assets/scss/main.scss:assets/css/main.css
+sass --watch scss/main.scss:public/assets/css/main.css
 
 https://nclarkson.herokuapp.com/
 
