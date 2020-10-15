@@ -9,7 +9,6 @@ use Michelf\Markdown;
 
 class Rootdown {
 
-
     public function __construct(){        
         $this->boot_up();
     }
@@ -34,11 +33,6 @@ class Rootdown {
         }
 
         $model  = $this->model($file);
-
-        echo '<pre>';
-            var_dump($model);
-        echo '</pre>';
-
         $twig   = $this->twig();
 
         echo $twig->render($model["template"] . '.twig', $model);
@@ -52,8 +46,6 @@ class Rootdown {
         $model['cache_buster'] = filemtime('assets/css/main.css');
         
         $globals = Yaml::parseFile('../config/system/globals.yml');
-
-        // var_dump($globals);
 
         $model = array_merge($model, $globals);
 

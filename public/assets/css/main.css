@@ -5,7 +5,6 @@
   line-height: 1.6; }
 
 body, html {
-  height: 100%;
   font-size: 1.1em;
   font-family: serif; }
 
@@ -91,7 +90,9 @@ img {
     .grid__unit--4-5 {
       grid-column: 4 / 5; }
     .grid__unit--2-5 {
-      grid-column: 2 / 5; } }
+      grid-column: 2 / 5; }
+    .grid__unit--2-4 {
+      grid-column: 2 / 4; } }
 
 .u-grey {
   color: #666666; }

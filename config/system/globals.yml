@@ -1,11 +1,29 @@
+site:
+    name: Nick Clarkson
+    url: https://nclarkson.herokuapp.com/
+    ga: UA-99691116-2
+socials:
+    twitter: 
+        url: ''
+        handle: '@t_pk'
+    instagram: 
+        url: ''
+        handle: '@clar.ky'
+    strava: 
+        url: ''
+    soundcloud: 
+        url: ''
+    facebook: 
+        url: ''
+        app_id: '1592717320815147'
 menus: 
-    - main:
-            -   
-                label: Home
-                path: /
-            -   
-                label: Spotify
-                path: /spotify
-            -   
-                label: CV
-                path: /cv
+    main:
+        -   
+            label: Home
+            path: /
+        -   
+            label: Playlists
+            path: /playlists
+        -   
+            label: CV
+            path: /cv

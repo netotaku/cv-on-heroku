@@ -1,248 +1,244 @@
 path: /cv
-title: CV
 template: cv
-data:
-
-    name: Nick Clarkson
-    title: Creative Technologist, Technical Director and Digital Leader
-    location: Bristol, UK
-    personal_statement: | 
-        Nick is a highly experienced and commercially focused technical director with a creative approach to solution design. Starting as a full stack developer in 1999 he is an advocate of integrated digital strategy and user centred digital experiences. Over the last 10 years he has held senior leadership positions both client and agency. 
-        
-        He lives in Bristol and has two sons Daniel and Alex.
+title: Creative Technologist, Technical Director and Digital Leader
+location: Bristol, UK
+personal_statement: | 
+    Nick is a highly experienced and commercially focused technical director with a creative approach to solution design. Starting as a full stack developer in 1999 he is an advocate of integrated digital strategy and user centred digital experiences. Over the last 10 years he has held senior leadership positions both client and agency. 
     
-    contact:
-        twitter: "https://twitter.com/t_pk"
-        instagram: "https://instagram.com/clar.ky"
-        strava: "https://www.strava.com/athletes/18818524"
-        phone: "+44 (0) 7771 535 355"
-        email: "nick@clarkson.io"
-        website: "https://clar.ky"
-        github: "https://github.com/netotaku/cv-on-heroku"
-        linkedin: https://www.linkedin.com/in/nicholasclarkson/
+    He lives in Bristol and has two sons Daniel and Alex.
 
-    work_experience: 
-        - 
-            company: Halo
-            position: Technical / Digital Director
-            start: 1530403200
-            end: Current
-            link: https://wearehalo.co.uk
-            description: |
+contact:
+    twitter: "https://twitter.com/t_pk"
+    instagram: "https://instagram.com/clar.ky"
+    strava: "https://www.strava.com/athletes/18818524"
+    phone: "+44 (0) 7771 535 355"
+    email: "nick@clarkson.io"
+    website: "https://clar.ky"
+    github: "https://github.com/netotaku/cv-on-heroku"
+    linkedin: https://www.linkedin.com/in/nicholasclarkson/
 
-                Running the digital team and setting the pace on digital strategy and technical direction in the context of brand and user requirements. My role has included recruitment and resourcing, team management of a multi-disciplined digital team, including web development, UX, social media management and strategy and project management. Formulating, implementing and selling an integrated digital vision for Halo’s clients and working at a board level on agency positioning and direction.
+work_experience: 
+    - 
+        company: Halo
+        position: Technical / Digital Director
+        start: 1530403200
+        end: Current
+        link: https://wearehalo.co.uk
+        description: |
 
-                I am client facing and I have successfully pitched for and won various digital projects. I have also been instrumental in creating strategies to open existing accounts and remain responsible for the overall digital target and budget.
+            Running the digital team and setting the pace on digital strategy and technical direction in the context of brand and user requirements. My role has included recruitment and resourcing, team management of a multi-disciplined digital team, including web development, UX, social media management and strategy and project management. Formulating, implementing and selling an integrated digital vision for Halo’s clients and working at a board level on agency positioning and direction.
 
-                While my role is strategic I am still very much involved in the day to day delivery of the department. From project management and scoping and estimating through to ad-hoc development tasks.
+            I am client facing and I have successfully pitched for and won various digital projects. I have also been instrumental in creating strategies to open existing accounts and remain responsible for the overall digital target and budget.
 
-                We are industry agnostic working with clients from Hospitality and Entertainment through to eComm and High Tech. _They include; Live Nation / Ticketmaster, Turtle Bay, Bart Spices, Download Festival, Wireless festival, Ombudsman Services, NLWA and Magna Housing._
+            While my role is strategic I am still very much involved in the day to day delivery of the department. From project management and scoping and estimating through to ad-hoc development tasks.
 
-        - 
-            company: NMI
-            position: Head of Digital
-            start: 1454284800
-            end: 1530403200
-            link: https://www.nmi.com
-            description: |
+            We are industry agnostic working with clients from Hospitality and Entertainment through to eComm and High Tech. _They include; Live Nation / Ticketmaster, Turtle Bay, Bart Spices, Download Festival, Wireless festival, Ombudsman Services, NLWA and Magna Housing._
 
-                Working closely with the Head of Marketing, I have devised the last 2 year-out digital strategies for the brand and since the recent acquisition of Creditcall I have devised and run the user research project that will inform a rebrand, a company positioning realignment and the ongoing development of the platform and the iterations thereof. I run an elastic team that includes UX, web development, design and E-CRM / Digital Marketing.
+    - 
+        company: NMI
+        position: Head of Digital
+        start: 1454284800
+        end: 1530403200
+        link: https://www.nmi.com
+        description: |
 
-                I devised and implemented the E-CRM / Marketing Automation strategy. Integrating a combination of Pardot and Salesforce. I have been involved with recruitment and on boarding and managing 3rd party suppliers. Along with pastoral care of the team and management of the digital marketing budget.
+            Working closely with the Head of Marketing, I have devised the last 2 year-out digital strategies for the brand and since the recent acquisition of Creditcall I have devised and run the user research project that will inform a rebrand, a company positioning realignment and the ongoing development of the platform and the iterations thereof. I run an elastic team that includes UX, web development, design and E-CRM / Digital Marketing.
 
-                I am also charged with the upkeep and refresh of all Creditcall forward-facing digital assets. This has included the redevelopment of creditcall.com and the development of the Express Boarding web application. The redeveloped creditcall.com resulted in a 300% uplift in conversions.
+            I devised and implemented the E-CRM / Marketing Automation strategy. Integrating a combination of Pardot and Salesforce. I have been involved with recruitment and on boarding and managing 3rd party suppliers. Along with pastoral care of the team and management of the digital marketing budget.
 
-                I have brought new development and team workflow principles to Creditcall along with with a focus on iterative, user-centric development, while adhering to strict security standards.
-        - 
-            company: AUK
-            position: Technical Director
-            start: 1454284800
-            end: 1530403200 
-            link: https://agencyuk.com   
-            description: |
-            
-                Headed up the technical department for AUK (formerly Agency UK). Ran a growing team of 6 developers. Spending quality time with current and prospective clients. In the pursuit of enjoyable and good works building web sites and web applications. Work included projects for: _Welsh Meat, BSM, Ladbrokes, Pentathlon GB, Quintiles_.
-        - 
-            company: G+V
-            position: Head of Development
-            start: 1351728000
-            end: 1454284800  
-            link: https://www.goramandvincent.com/
-            description: |
-            
-                Charged with agency technical direction. Instrumental in winning National Pitches. Championed solutions based approach and cross discipline collaboration within the business. Built, maintained and supported the development team. Work included projects for: _Brothers Cider, Drinkaware, Continental Tyres, NOS. ISTRUCT, British Medical Journal, Zettics_.
-        - 
-            company: Great State
-            position: Senior Interface Developer
-            start: 1320105600
-            end: 1351728000 
-            link: https://www.greatstate.co/
-            description: |
-            
-                Created thick web interfaces and mobile applications. Took a lead role in the delivery of technical projects. Nurtured / advised junior members of the Development team. Contributed to process work groups. Work included projects for: _Kia, Land Rover, Orange, The Royal Navy and The National Trust_.
+            I am also charged with the upkeep and refresh of all Creditcall forward-facing digital assets. This has included the redevelopment of creditcall.com and the development of the Express Boarding web application. The redeveloped creditcall.com resulted in a 300% uplift in conversions.
 
-        -
-            company: Digital Visitor
-            position: Development Manager
-            start: 1288569600
-            end: 1320105600
-            link: https://digitalvisitor.com/
-            description: |
-            
-                Built Visitor Review, an integrated social media platform with a customer review element. Took a lead role in developing a RESTful API and a highly configurable REST client. Developed a suite of Javascript widgets which allow content editors to install social and review functions to their web sites. Work included projects for: _Enjoy England, Joules Verne Voyages, London Clubs International_.
-            
-        -
-            company: Freelance
-            position: Web Developer / Designer
-            start: 1193875200
-            end: 1288569600
-            description: |
-            
-                As a freelancer I worked on a wide range of projects from intranets to eLearning applications. I bid for and won these projects and managed their delivery. Work included projects for: _Telstra, Minervation, Oxford University, Scottish NHS, Thames Valley NHS, British Cardiology Society, King and Allen, Talis, Team Rubber_.
+            I have brought new development and team workflow principles to Creditcall along with with a focus on iterative, user-centric development, while adhering to strict security standards.
+    - 
+        company: AUK
+        position: Technical Director
+        start: 1454284800
+        end: 1530403200 
+        link: https://agencyuk.com   
+        description: |
+        
+            Headed up the technical department for AUK (formerly Agency UK). Ran a growing team of 6 developers. Spending quality time with current and prospective clients. In the pursuit of enjoyable and good works building web sites and web applications. Work included projects for: _Welsh Meat, BSM, Ladbrokes, Pentathlon GB, Quintiles_.
+    - 
+        company: G+V
+        position: Head of Development
+        start: 1351728000
+        end: 1454284800  
+        link: https://www.goramandvincent.com/
+        description: |
+        
+            Charged with agency technical direction. Instrumental in winning National Pitches. Championed solutions based approach and cross discipline collaboration within the business. Built, maintained and supported the development team. Work included projects for: _Brothers Cider, Drinkaware, Continental Tyres, NOS. ISTRUCT, British Medical Journal, Zettics_.
+    - 
+        company: Great State
+        position: Senior Interface Developer
+        start: 1320105600
+        end: 1351728000 
+        link: https://www.greatstate.co/
+        description: |
+        
+            Created thick web interfaces and mobile applications. Took a lead role in the delivery of technical projects. Nurtured / advised junior members of the Development team. Contributed to process work groups. Work included projects for: _Kia, Land Rover, Orange, The Royal Navy and The National Trust_.
 
-        -
-            company: Xpress Ordering
-            position: Product Specialist
-            start: 1414800000
-            end: 1193875200
-            description: |
+    -
+        company: Digital Visitor
+        position: Development Manager
+        start: 1288569600
+        end: 1320105600
+        link: https://digitalvisitor.com/
+        description: |
+        
+            Built Visitor Review, an integrated social media platform with a customer review element. Took a lead role in developing a RESTful API and a highly configurable REST client. Developed a suite of Javascript widgets which allow content editors to install social and review functions to their web sites. Work included projects for: _Enjoy England, Joules Verne Voyages, London Clubs International_.
+        
+    -
+        company: Freelance
+        position: Web Developer / Designer
+        start: 1193875200
+        end: 1288569600
+        description: |
+        
+            As a freelancer I worked on a wide range of projects from intranets to eLearning applications. I bid for and won these projects and managed their delivery. Work included projects for: _Telstra, Minervation, Oxford University, Scottish NHS, Thames Valley NHS, British Cardiology Society, King and Allen, Talis, Team Rubber_.
 
-                Produced, maintained and enhanced and re-purposed Xpress Ordering’s kiosk ordering application. Developed key interface elements and aspects of the Firebird database. Developed a PHP administration tool.
+    -
+        company: Xpress Ordering
+        position: Product Specialist
+        start: 1414800000
+        end: 1193875200
+        description: |
 
-                Extended the kiosk application to include, amongst other functions, a customer survey and webcam functionality. Work included projects for; _Orange, Brake Brothers, Natwest, Lloyds, RBS_
+            Produced, maintained and enhanced and re-purposed Xpress Ordering’s kiosk ordering application. Developed key interface elements and aspects of the Firebird database. Developed a PHP administration tool.
 
-        -
-            company: Freelance
-            position: Web Developer / Designer
-            start: 941414400
-            end: 1414800000
-            description: |
+            Extended the kiosk application to include, amongst other functions, a customer survey and webcam functionality. Work included projects for; _Orange, Brake Brothers, Natwest, Lloyds, RBS_
 
-                Built sites for various SMEs ranging from pubs / clubs to ad hoc work for Playboy UK and Gum Ball 3000.
+    -
+        company: Freelance
+        position: Web Developer / Designer
+        start: 941414400
+        end: 1414800000
+        description: |
 
-                Prior to embarking on my freelance career I worked as a Compliance tester for Microsoft working on the original Xbox release titles including PGR, Oddworld and Halo.    
+            Built sites for various SMEs ranging from pubs / clubs to ad hoc work for Playboy UK and Gum Ball 3000.
 
-    skills: 
-        Soft:
-            - Technical Leadership
-            - Digital Marketing
-            - Digital Strategy
-            - Agency Strategy and Direction
-            - Web Design
-            - Account Managment  
-            - Business Development
-            - Team cohesion and work flow
-            - People Management
-            - Project Management
-            - Coaching
-            - Recruitment
-            - Negotiation
-            - Conflict resolution
-            - Public Speaking
-            - Scoping, Briefing and estimation
-            - Working with confidential and sensitive issues
-            - Pitching
-        CMS:
-            - CraftCMS
-            - Wordpress / Woocommerce    
-            - Ghost
-            - Jekyll
-            - Shopify
-            - Squarespace
-        Infrastucture:
-            - AWS
-            - Heroku
-            - Apache
-            - Nginx 
-            - Ddev / Docker
-            - Cloudflare
-        Backend:
-            - PHP
-            - Ruby
-            - Node
-        Frontend:
-            - CSS / BEM
-            - SCSS
-            - Javascript
-            - Vue
-            - jQuery
-            - HTML
-            - Canvas
-        Optimisation:
-            - Webperf
-            - SEO
-            - Accessibilty
-        Data:
-            - YAML
-            - XML
-            - JSON
-            - MySQL / MariaDB
-            - REST
-            - Contentful
-        MVC:
-            - Laravel
-            - Rails
-        Templating:
-            - Twig
-            - Blade
-            - Liquid
-        Versioning:
-            - Git / Flow
-            - SVN
-        OS:
-            - OSX
-            - Linux
-        CRM:
-            - Salesforce
-            - Pardot
-            - Mailchimp
-        APIs:
-            - Gdata
-            - Spotify
-            - Facebook
-            - Twitter
-            - Instagram
-            - Google Maps
-        Tools:
-            - Sprout Social
-            - SEMRush
-            - Invision
-            - Sketch
-            - XD
-            - Google Analytics
-            - Google Search Console 
+            Prior to embarking on my freelance career I worked as a Compliance tester for Microsoft working on the original Xbox release titles including PGR, Oddworld and Halo.    
 
-    education:
-        -
-            school: Kingston University
-            course: MSc. Computing Systems
-            start: 778377600
-            end: 873072000
-            description: |
+skills: 
+    Soft:
+        - Technical Leadership
+        - Digital Marketing
+        - Digital Strategy
+        - Agency Strategy and Direction
+        - Web Design
+        - Account Managment  
+        - Business Development
+        - Team cohesion and work flow
+        - People Management
+        - Project Management
+        - Coaching
+        - Recruitment
+        - Negotiation
+        - Conflict resolution
+        - Public Speaking
+        - Scoping, Briefing and estimation
+        - Working with confidential and sensitive issues
+        - Pitching
+    CMS:
+        - CraftCMS
+        - Wordpress / Woocommerce    
+        - Ghost
+        - Jekyll
+        - Shopify
+        - Squarespace
+    Infrastucture:
+        - AWS
+        - Heroku
+        - Apache
+        - Nginx 
+        - Ddev / Docker
+        - Cloudflare
+    Backend:
+        - PHP
+        - Ruby
+        - Node
+    Frontend:
+        - CSS / BEM
+        - SCSS
+        - Javascript
+        - Vue
+        - jQuery
+        - HTML
+        - Canvas
+    Optimisation:
+        - Webperf
+        - SEO
+        - Accessibilty
+    Data:
+        - YAML
+        - XML
+        - JSON
+        - MySQL / MariaDB
+        - REST
+        - Contentful
+    MVC:
+        - Laravel
+        - Rails
+    Templating:
+        - Twig
+        - Blade
+        - Liquid
+    Versioning:
+        - Git / Flow
+        - SVN
+    OS:
+        - OSX
+        - Linux
+    CRM:
+        - Salesforce
+        - Pardot
+        - Mailchimp
+    APIs:
+        - Gdata
+        - Spotify
+        - Facebook
+        - Twitter
+        - Instagram
+        - Google Maps
+    Tools:
+        - Sprout Social
+        - SEMRush
+        - Invision
+        - Sketch
+        - XD
+        - Google Analytics
+        - Google Search Console 
 
-                My degree course covered Computer Science, Maths and Digital and Analogue Electronics.
+education:
+    -
+        school: Kingston University
+        course: MSc. Computing Systems
+        start: 778377600
+        end: 873072000
+        description: |
 
-    hobbies_and_interests: 
-        - Family
-        - Tech
-        - Music
-        - Guitar
-        - Bass
-        - Drums
-        - Cycling
-        - Running
-        - Yoga
-        - Jack Russells
-        - Cooking &amp; Food
-        - I have a music blog at [https://beat.rehab](https://beat.rehab)
+            My degree course covered Computer Science, Maths and Digital and Analogue Electronics.
 
-    awards: 
-        - | 
-            ### 2015 Drum Awards for Digital Industries   
-            Best Not for Profit Website For The National Trust 50 Things Campaign.
-        - |
-            ### 2011 Travolution Awards
-            Best Online Application For Visitor Review.
-        - |
-            ### 2010 IVCA
-            Best Interactive For a Flash eLearning application designed & developed for Rethink (The National Schizophrenia Society) in conjunction with Minervation and Seafood.
+hobbies_and_interests: 
+    - Family
+    - Tech
+    - Music
+    - Guitar
+    - Bass
+    - Drums
+    - Cycling
+    - Running
+    - Yoga
+    - Jack Russells
+    - Cooking &amp; Food
+    - I have a music blog at [https://beat.rehab](https://beat.rehab)
+
+awards: 
+    - | 
+        ### 2015 Drum Awards for Digital Industries   
+        Best Not for Profit Website For The National Trust 50 Things Campaign.
+    - |
+        ### 2011 Travolution Awards
+        Best Online Application For Visitor Review.
+    - |
+        ### 2010 IVCA
+        Best Interactive For a Flash eLearning application designed & developed for Rethink (The National Schizophrenia Society) in conjunction with Minervation and Seafood.

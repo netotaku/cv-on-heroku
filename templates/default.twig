@@ -1,8 +1,21 @@
-<html>
+<!DOCTYPE html>
+<html lang="en-GB">
     <head>
+        {% include 'partials/head.twig' %}
+        <!-- If you are interested in how this site works, you can view the code here: https://github.com/netotaku/cv-on-heroku. -->
     </head>
-    <body>
-        <h1>{{ title }}</h1>
-        {{ content | markdown | raw }}
+    <body>    
+        {% block hero %}{% endblock %}
+        <article class="grid">
+            {% block content %}
+                <header class="grid__unit grid__unit--2-5 u-mobile-hr headline">
+                    {{ header | markdown | raw }}                                       
+                </header>
+                <div class="grid__unit grid__unit--2-5 u-mobile-hr">
+                    {{ content | markdown | raw }}    
+                </div>                                   
+            {% endblock %}
+            {% include 'partials/footer.twig' %}
+        </article>
     </body>
 </html>
