@@ -3,7 +3,7 @@
 class Controller {
 
    public function __construct(){
-        echo 'controller';
+        // echo 'controller';
    }
 
 }

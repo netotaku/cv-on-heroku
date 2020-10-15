@@ -2,8 +2,8 @@
 
 class Middleware {
 
-   public function __construct(){
-        echo 'Middleware';
+   public function __construct($model){
+        // echo 'Middleware';        
    }
 
 }

@@ -2,7 +2,10 @@
     "require": {
         "michelf/php-markdown": "^1.9",
         "symfony/yaml": "^4.4",
-        "twig/twig": "^2.0"
+        "twig/twig": "^2.0",
+        "symfony/filesystem": "^4.4",
+        "jwage/purl": "^0.0.10",
+        "symfony/finder": "^4.4"
     },
     "autoload": {
         "psr-4": {
