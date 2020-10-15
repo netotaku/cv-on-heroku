@@ -1,0 +1,11 @@
+menus: 
+    - main:
+            -   
+                label: Home
+                path: /
+            -   
+                label: Spotify
+                path: /spotify
+            -   
+                label: CV
+                path: /cv

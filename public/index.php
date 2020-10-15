@@ -2,13 +2,15 @@
 
     require '../vendor/autoload.php';
 
-    $router = new Rootdown\Router();
+    new Rootdown\Rootdown();
+
+    // $router = new Rootdown\Router();
     
-    $model = new Rootdown\Model($router);
-    $model = new Rootdown\Middleware($model);
-    $model = new Rootdown\Controller($model);
+    // $model = new Rootdown\Model($router);
+    // $model = new Rootdown\Middleware($model);
+    // $model = new Rootdown\Controller($model);
     
-    new Rootdown\View($model);
+    // new Rootdown\View($model);
 
     // dd();
 

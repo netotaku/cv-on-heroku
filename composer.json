@@ -8,9 +8,6 @@
         "symfony/finder": "^4.4"
     },
     "autoload": {
-        "psr-4": {
-            "Rootdown\\":"src/"
-        },
-        "classmap": [ "src" ]
+        "classmap": [ "Rootdown" ]
     }
 }
