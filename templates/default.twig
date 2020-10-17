@@ -9,7 +9,8 @@
         <article class="grid">
             {% block content %}
                 <header class="grid__unit grid__unit--2-5 u-mobile-hr headline">
-                    {{ header | markdown | raw }}                                       
+                    {{ header | markdown | raw }}   
+                    <p class="u-grey"><em>Last update / <time datetime="{{ last_updated }}">{{ last_updated | format_date }}</time></em></p>                                                    
                 </header>
                 <div class="grid__unit grid__unit--2-5 u-mobile-hr">
                     {{ content | markdown | raw }}    
@@ -17,5 +18,8 @@
             {% endblock %}
             {% include 'partials/footer.twig' %}
         </article>
+
+        <a href="/" class="menu"></a>
+
     </body>
 </html>

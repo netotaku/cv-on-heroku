@@ -2,20 +2,42 @@ site:
     name: Nick Clarkson
     url: https://nclarkson.herokuapp.com/
     ga: UA-99691116-2
-socials:
-    twitter: 
-        url: ''
+contact:
+    email: nick@clarkson.io
+    phone: 07771 535355
+    telegram: https://t.me/nclarkson
+links:
+    - 
+        label: Beat Rehab
+        url: https://beat.rehab       
+social:
+    twitter:
+        label: Twitter 
+        url: 'https://twitter.com/t_pk'
         handle: '@t_pk'
     instagram: 
-        url: ''
+        label: Instagram
+        url: 'https://www.instagram.com/clar.ky/'
         handle: '@clar.ky'
     strava: 
-        url: ''
+        label: Strava
+        url: 'https://www.strava.com/athletes/18818524'
     soundcloud: 
-        url: ''
-    facebook: 
-        url: ''
+        label: Soundcloud
+        url: 'https://soundcloud.com/trialanderror/'
+    facebook:
+        label: Facebook 
+        url: 'https://www.facebook.com/nickmachete'
         app_id: '1592717320815147'
+    mixcloud: 
+        label: Mixcloud
+        url: 'https://www.mixcloud.com/mincon/'
+    linkedIn:
+        label: LinkedIn
+        url: 'https://www.linkedin.com/in/nicholasclarkson/'
+    github: 
+        label: GitHub
+        url: 'https://github.com/netotaku'
 menus: 
     main:
         -   

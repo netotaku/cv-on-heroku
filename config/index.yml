@@ -3,8 +3,11 @@ header: |
     # Nick Clarkson
 
     ## Creative Technologist, Technical Director and Digital Leader
-template: default    
+template: default  
+title: Nick Clarkson 
+description: Creative Technologist, Technical Director and Digital Leader, Bristol UK 
 content: |
-    Nick is a highly experienced and commercially focused technical director with a creative approach to solution design. Starting as a full stack developer in 1999 he is an advocate of integrated digital strategy and user centred digital experiences. Over the last 10 years he has held senior leadership positions both client and agency. 
+    Nick is a highly experienced and commercially focused Technical Director with a creative approach to solution design. Starting as a full stack developer in 1999 he is an advocate of integrated digital strategy and user centred digital experiences. Over the last 10 years he has held senior leadership positions both client and agency. 
         
-    He lives in Bristol and has two sons Daniel and Alex.
+    He lives in Bristol and has two sons Daniel and Alex. 
+slug: home

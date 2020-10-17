@@ -8,6 +8,8 @@
 body, html{    
     font-size: 1.1em;   
     font-family: serif;    
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 ul, ol{
@@ -43,12 +45,6 @@ h2{
     }
 }  
 
-.vcard{
-    width: 120px;
-    height: auto;
-    display: block;
-}
-
 img{
     display: block;
     width: 100%;
@@ -60,6 +56,32 @@ img{
     background-position: center;
     background-size: cover;
     height: 36vw;
+}
+
+
+.footer{
+    display: flex;
+    &__item{
+        display: block;
+        &__image{
+            display: block;
+            margin-right: 20px;
+            width: auto;
+        }
+        &--qr{
+            width: 120px;
+            height: auto;
+        }
+    }
+    @media screen and (max-width: $break) {  
+        // align-items: center;
+        // justify-content: center;
+    }
+}
+
+.qr{
+    width: 80px;
+    height: 80px;
 }
 
 

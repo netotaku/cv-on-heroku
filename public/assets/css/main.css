@@ -6,7 +6,9 @@
 
 body, html {
   font-size: 1.1em;
-  font-family: serif; }
+  font-family: serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 ul, ol {
   list-style-type: none; }
@@ -50,11 +52,6 @@ h6 {
   font-family: sans-serif;
   letter-spacing: -.6px; }
 
-.vcard {
-  width: 120px;
-  height: auto;
-  display: block; }
-
 img {
   display: block;
   width: 100%;
@@ -65,6 +62,22 @@ img {
   background-position: center;
   background-size: cover;
   height: 36vw; }
+
+.footer {
+  display: flex; }
+  .footer__item {
+    display: block; }
+    .footer__item__image {
+      display: block;
+      margin-right: 20px;
+      width: auto; }
+    .footer__item--qr {
+      width: 120px;
+      height: auto; }
+
+.qr {
+  width: 80px;
+  height: 80px; }
 
 @media screen and (max-width: 1000px) {
   article {
@@ -98,8 +111,24 @@ img {
   color: #666666; }
 .u-inline {
   display: inline; }
+.u-mobile-only {
+  display: none; }
 @media screen and (max-width: 1000px) {
   .u-mobile-hr {
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+  .u-mobile-only {
+    display: block; }
+  .u-no-mobile {
+    display: none; } }
+
+.menu {
+  position: fixed;
+  display: block;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  background: #111;
+  bottom: 40px;
+  right: 40px; }
 
 /*# sourceMappingURL=main.css.map */

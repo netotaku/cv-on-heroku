@@ -1,0 +1,10 @@
+.menu{
+    position: fixed;
+    display: block;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background: $black;
+    bottom: $gutter*2;
+    right: $gutter*2;
+}
