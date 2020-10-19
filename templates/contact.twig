@@ -26,6 +26,18 @@
                 <li><a target="_blank" href="{{ link.url }}">{{ link.label }}</a></li>
             {% endfor %}
         </ul>
-    </div>     
+    </div>   
+
+    <div class="grid__unit grid__unit--2-3 u-mobile-hr">
+        <h2>Links</h2>
+    </div>
+
+    <div class="grid__unit grid__unit--3-5 u-mobile-hr">
+        <ul>
+            {% for link in links %}
+                <li><a target="_blank" href="{{ link.url }}">{{ link.label }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>   
 
 {% endblock %}

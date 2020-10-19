@@ -49,3 +49,6 @@ menus:
         -   
             label: CV
             path: /cv
+        -   
+            label: Contact
+            path: /holla            

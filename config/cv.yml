@@ -3,6 +3,7 @@ template: cv
 slug: cv
 title: Creative Technologist, Technical Director and Digital Leader
 location: Bristol, UK
+modifier: ' grid--cv'
 personal_statement: | 
     Nick is a highly experienced and commercially focused technical director with a creative approach to solution design. Starting as a full stack developer in 1999 he is an advocate of integrated digital strategy and user centred digital experiences. Over the last 10 years he has held senior leadership positions both client and agency. 
     

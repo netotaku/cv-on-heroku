@@ -2,8 +2,13 @@
     @media screen and (min-width: $break) {
         
         display: grid;
-        grid-template-columns: 10% 20% 15% auto 10%;    
 
+        grid-template-columns: 10% auto auto auto 10%;    
+
+        &--cv{
+            grid-template-columns: 10% 20% 15% auto 10%;    
+        }
+        
         margin: $gutter*5 0;    
         gap: $gutter*5 $gutter;
 

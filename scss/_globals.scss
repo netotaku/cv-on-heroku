@@ -59,26 +59,6 @@ img{
 }
 
 
-.footer{
-    display: flex;
-    &__item{
-        display: block;
-        &__image{
-            display: block;
-            margin-right: 20px;
-            width: auto;
-        }
-        &--qr{
-            width: 120px;
-            height: auto;
-        }
-    }
-    @media screen and (max-width: $break) {  
-        // align-items: center;
-        // justify-content: center;
-    }
-}
-
 .qr{
     width: 80px;
     height: 80px;
