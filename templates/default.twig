@@ -8,11 +8,11 @@
         {% block hero %}{% endblock %}
         <article class="grid{{ modifier }}">
             {% block content %}
-                <header class="grid__unit grid__unit--2-5 u-mobile-hr headline">
+                <header class="grid__unit grid__unit--1-4 u-mobile-hr headline">
                     {{ header | markdown | raw }}   
                     <p class="u-grey"><em>Last update / <time datetime="{{ last_updated }}">{{ last_updated | format_date }}</time></em></p>                                                    
                 </header>
-                <div class="grid__unit grid__unit--2-5 u-mobile-hr">
+                <div class="grid__unit grid__unit--1-4 u-mobile-hr">
                     {{ content | markdown | raw }}    
                 </div>                                   
             {% endblock %}

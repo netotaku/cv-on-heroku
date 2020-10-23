@@ -1,0 +1,32 @@
+@import "hgrid";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;  
+}
+
+.section{
+    padding: 5vw;
+}
+
+.card{
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    &--grey{
+        background: #eee;
+        border: solid 3px #ccc;
+        font-size: .8rem;
+        color: #666;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        position: relative;
+    }
+}
+
+.hg{
+    @include hgrid(12,20px,800px);
+}

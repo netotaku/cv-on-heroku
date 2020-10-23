@@ -1,0 +1,70 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box; }
+
+.section {
+  padding: 5vw; }
+
+.card {
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  align-items: center; }
+  .card--grey {
+    background: #eee;
+    border: solid 3px #ccc;
+    font-size: .8rem;
+    color: #666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: relative; }
+
+.hg {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px; }
+  .hg__u {
+    grid-column: span 12; }
+    @media only screen and (min-width: 800px) {
+      .hg__u--span-1 {
+        grid-column: span 1; }
+      .hg__u--span-2 {
+        grid-column: span 2; }
+      .hg__u--span-3 {
+        grid-column: span 3; }
+      .hg__u--span-4 {
+        grid-column: span 4; }
+      .hg__u--span-5 {
+        grid-column: span 5; }
+      .hg__u--span-6 {
+        grid-column: span 6; }
+      .hg__u--span-7 {
+        grid-column: span 7; }
+      .hg__u--span-8 {
+        grid-column: span 8; }
+      .hg__u--span-9 {
+        grid-column: span 9; }
+      .hg__u--span-10 {
+        grid-column: span 10; }
+      .hg__u--span-11 {
+        grid-column: span 11; }
+      .hg__u--span-12 {
+        grid-column: span 12; }
+      .hg__u--span-13 {
+        grid-column: span 13; }
+      .hg__u--thd {
+        grid-column: span 4; }
+      .hg__u--2-thds {
+        grid-column: span 8; }
+      .hg__u--qtr {
+        grid-column: span 3; }
+      .hg__u--3-qtrs {
+        grid-column: span 9; }
+      .hg__u--hlf {
+        grid-column: span 6; }
+      .hg__u--ful {
+        grid-column: span 12; } }
+
+/*# sourceMappingURL=style.css.map */

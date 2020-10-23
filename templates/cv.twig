@@ -4,27 +4,27 @@
 {% endblock %}
 {% block content %}
 
-    <header class="grid__unit grid__unit--2-5 u-mobile-hr headline">
+    <header class="grid__unit grid__unit--1-4 u-mobile-hr headline">
         <h1>{{ site.name }}</h1>
         <h2>{{ title }}</h2>
         <h3 class="u-grey">{{ location }}</h3>            
     </header>
 
-    <div class="grid__unit grid__unit--2-3 u-mobile-hr">
+    <div class="grid__unit grid__unit--1-2 u-mobile-hr">
         <h2>Introduction</h2>
     </div>
 
-    <div class="grid__unit grid__unit--3-5 u-mobile-hr">
+    <div class="grid__unit grid__unit--2-4 u-mobile-hr">
         {{ personal_statement | markdown | raw }}
     </div>   
 
-    <div class="grid__unit grid__unit--2-3 u-mobile-hr">
+    <div class="grid__unit grid__unit--1-2 u-mobile-hr">
         <h2>Experience</h2>
     </div>         
 
     {% for job in work_experience %}
 
-        <div class="grid__unit grid__unit--3-4">                                        
+        <div class="grid__unit grid__unit--2-3">                                        
             <h3>
                 {% if job.link %}
                     <a href="{{ job.link }}" target="_blank">
@@ -37,38 +37,38 @@
             <p class="u-mobile-hr u-grey"><em><time datetime="{{ job.start }}">{{ job.start | format_date }}</time> - <time datetime="{{ job.end }}">{{ job.end | format_date }}</time></em></p>
         </div> 
 
-        <div class="grid__unit grid__unit--4-5 u-mobile-hr"> 
+        <div class="grid__unit grid__unit--3-4 u-mobile-hr"> 
             {{ job.description | markdown | raw }}  
         </div>                         
     
     {% endfor %}
 
-    <div class="grid__unit grid__unit--2-3 u-mobile-hr">
+    <div class="grid__unit grid__unit--1-2 u-mobile-hr">
         <h2>Skills</h2>
     </div>  
 
-    <div class="grid__unit grid__unit--3-5 u-mobile-hr">
+    <div class="grid__unit grid__unit--2-4 u-mobile-hr">
         {% for key,skill in skills %}
             <h3>{{ key }}</h3>
             <p>{{ skill | join(', ') }}</p>
         {% endfor %}
     </div>             
 
-    <div class="grid__unit grid__unit--2-3 u-mobile-hr">
+    <div class="grid__unit grid__unit--1-2 u-mobile-hr">
         <h2>Awards</h2>
     </div>  
 
-    <div class="grid__unit grid__unit--3-5 u-mobile-hr">
+    <div class="grid__unit grid__unit--2-4 u-mobile-hr">
         {% for award in awards %}
             {{ award | markdown | raw }}
         {% endfor %}
     </div>              
 
-    <div class="grid__unit grid__unit--2-3">
+    <div class="grid__unit grid__unit--1-2">
         <h2>Education</h2>
     </div>  
 
-    <div class="grid__unit grid__unit--3-5 u-mobile-hr">
+    <div class="grid__unit grid__unit--2-4 u-mobile-hr">
         {% for qualification in education %}
             <h3>{{ qualification.course }}</h3>
             <h4>{{ qualification.school }}</h4>
@@ -77,11 +77,11 @@
         {% endfor %}                
     </div> 
 
-    <div class="grid__unit grid__unit--2-3 u-mobile-hr">
+    <div class="grid__unit grid__unit--1-2 u-mobile-hr">
         <h2>Interests</h2>
     </div>  
 
-    <div class="grid__unit grid__unit--3-5 u-mobile-hr">               
+    <div class="grid__unit grid__unit--2-4 u-mobile-hr">               
         {{ hobbies_and_interests | join(', ') | markdown | raw }}              
     </div>                
 

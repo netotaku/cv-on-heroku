@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        {% include 'partials/head.twig' %}        
+    </head>
+    <body>
+        <section class="section hg">
+            <div class="hg__u hg__u--ful card"><em>Twelve column grid absolute modifiers</em></div>
+            <div class="hg__u hg__u--span-12 card card--grey">__u--span-12</div>
+            {% for i in 1..11 %}                
+                <div class="hg__u hg__u--span-{{ i }} card card--grey">__u--span-{{ i }}</div> 
+                <div class="hg__u hg__u--span-{{ 12 - i }} card card--grey">__u--span-{{ i - 12 }}</div>                                
+            {% endfor %}
+        </section>
+
+        <section class="section hg">
+            <div class="hg__u hg__u--ful card"><em>Twelve column grid alias modifiers</em></div>
+            <div class="hg__u hg__u--ful card card--grey">__u--ful</div>
+            <div class="hg__u hg__u--thd card card--grey">__u--thd</div>
+            <div class="hg__u hg__u--2-thds card card--grey">__u--2-thds</div> 
+            <div class="hg__u hg__u--qtr card card--grey">__u--qtr</div>
+            <div class="hg__u hg__u--3-qtrs card card--grey">__u--3-qtrs</div>
+            <div class="hg__u hg__u--hlf card card--grey">__u--hlf</div>
+            <div class="hg__u hg__u--hlf card card--grey">__u--hlf</div>            
+        </section>
+
+        <section class="section">
+            <div class="hg__u hg__u--ful card"><em>Mixin and SASS implementation</em></div>
+            <div class="hg__u hg__u--ful"><script src="https://gist.github.com/netotaku/05951a783f0b6066114c1376f602fbbf.js"></script></div>
+        </section>
+
+    </body>
+</html>

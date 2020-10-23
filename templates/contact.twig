@@ -1,14 +1,14 @@
 {% extends "default.twig" %}
 {% block content %}
-    <header class="grid__unit grid__unit--2-5 u-mobile-hr headline">
+    <header class="grid__unit grid__unit--1-4 u-mobile-hr headline">
         <h1>{{ title }}</h1>        
     </header>
 
-    <div class="grid__unit grid__unit--2-3 u-mobile-hr">
+    <div class="grid__unit grid__unit--1-2 u-mobile-hr">
         <h2>Contact</h2>
     </div>
 
-    <div class="grid__unit grid__unit--3-5 u-mobile-hr">
+    <div class="grid__unit grid__unit--2-4 u-mobile-hr">
         <ul>
             <li><a href="mailto:{{ contact.email }}">{{ contact.email }}</a></li>
             <li><a href="tel:{{ contact.phone }}">{{ contact.phone }}</a></li>
@@ -16,11 +16,11 @@
         </ul>
     </div> 
 
-    <div class="grid__unit grid__unit--2-3 u-mobile-hr">
+    <div class="grid__unit grid__unit--1-2 u-mobile-hr">
         <h2>Social</h2>
     </div>
 
-    <div class="grid__unit grid__unit--3-5 u-mobile-hr">
+    <div class="grid__unit grid__unit--2-4 u-mobile-hr">
         <ul>
             {% for link in social %}
                 <li><a target="_blank" href="{{ link.url }}">{{ link.label }}</a></li>
@@ -28,11 +28,11 @@
         </ul>
     </div>   
 
-    <div class="grid__unit grid__unit--2-3 u-mobile-hr">
+    <div class="grid__unit grid__unit--1-2 u-mobile-hr">
         <h2>Links</h2>
     </div>
 
-    <div class="grid__unit grid__unit--3-5 u-mobile-hr">
+    <div class="grid__unit grid__unit--2-4 u-mobile-hr">
         <ul>
             {% for link in links %}
                 <li><a target="_blank" href="{{ link.url }}">{{ link.label }}</a></li>

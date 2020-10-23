@@ -1,4 +1,34 @@
 path: /playlists
 title: Playlists
-template: default
+template: playlists
 slug: playlists
+header: |
+    # Playlists
+playlists: 
+    themed:
+        - id: '5CgYoF9DYeNeNnGWSdPNma'
+          label: ''  
+          description: ''
+    eclectic:
+        - id: '4PwmrQtSko5E2k8timUF5k'
+          label: '' 
+          description: ''
+        - id: '4PwmrQtSko5E2k8timUF5k'
+          label: '' 
+          description: ''          
+        - id: '4PwmrQtSko5E2k8timUF5k'
+          label: '' 
+          description: ''  
+        - id: '4PwmrQtSko5E2k8timUF5k'
+          label: '' 
+          description: ''  
+        - id: '4PwmrQtSko5E2k8timUF5k'
+          label: '' 
+          description: ''  
+        - id: '4PwmrQtSko5E2k8timUF5k'
+          label: '' 
+          description: '' 
+        - id: '4PwmrQtSko5E2k8timUF5k'
+          label: '' 
+          description: ''                      
+                                              
