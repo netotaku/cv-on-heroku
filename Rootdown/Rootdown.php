@@ -13,6 +13,12 @@ use Rootdown\Controllers;
 class Rootdown {
 
     public function __construct(){  
+        
+        if(file_exists('../.env')){
+            $dotenv = new Dotenv();
+            $dotenv->load('../.env');    
+        }  
+
         $model = $this->model();
         $view = $this->view();
         $this->controller($model, $view);
@@ -44,7 +50,6 @@ class Rootdown {
         echo $view->render($model["template"] . '.twig', $model);        
     }
 
-
     private function model(){
 
         $file   = $this->file();
@@ -62,12 +67,8 @@ class Rootdown {
 
     private function view(){
 
-        if(file_exists('../.env')){
-            $dotenv = new Dotenv();
-            $dotenv->load('../.env');    
-        }        
-        
-        var_dump(getenv('ENV'));
+            
+        echo getenv('ENV') . '!';
 
         $view = new \Twig\Environment(new \Twig\Loader\FilesystemLoader('../templates'), [
             'cache' => (getenv('ENV') == 'local' ? false : 'templates_cache') ]);
