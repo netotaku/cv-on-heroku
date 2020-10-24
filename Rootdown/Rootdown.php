@@ -62,9 +62,11 @@ class Rootdown {
 
     private function view(){
 
-        $dotenv = new Dotenv();
-        $dotenv->load('../.env');
-
+        if(file_exists('../.env')){
+            $dotenv = new Dotenv();
+            $dotenv->load('../.env');    
+        }        
+        
         var_dump(getenv('ENV'));
 
         $view = new \Twig\Environment(new \Twig\Loader\FilesystemLoader('../templates'), [
