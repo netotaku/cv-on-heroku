@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en-GB">
+<html class="u-bg-grey" lang="en-GB">
     <head>
         {% include 'partials/head.twig' %}        
     </head>
     <body>
         {% block yield %}
         {% endblock %}
+        <footer class="section footer">
+            {% include "partials/footer.twig" %}
+        </footer>
     </body>
 </html>

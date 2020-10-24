@@ -8,6 +8,16 @@
     &mobile-only{
         display: none;
     }
+    &bg-{
+        &white{
+            background-color: #fff;
+        }
+        &grey{
+            background-color: #eee;
+        }        
+    }
+    
+
     @media screen and (max-width: $break) {  
         &mobile-{
             &hr{

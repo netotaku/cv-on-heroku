@@ -5,11 +5,10 @@ site:
 contact:
     email: nick@clarkson.io
     phone: 07771 535355
-    telegram: https://t.me/nclarkson
+    telegram: nclarkson
 links:
-    - 
-        label: Beat Rehab
-        url: https://beat.rehab       
+    - label: Beat Rehab
+      url: https://beat.rehab       
 social:
     twitter:
         label: Twitter 
@@ -43,9 +42,9 @@ menus:
         -   
             label: Home
             path: /
-        -   
-            label: Playlists
-            path: /playlists
+        # -   
+        #     label: Playlists
+        #     path: /playlists
         -   
             label: CV
             path: /cv

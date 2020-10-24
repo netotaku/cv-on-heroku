@@ -68,7 +68,7 @@ class Rootdown {
     private function view(){
 
         $view = new \Twig\Environment(new \Twig\Loader\FilesystemLoader('../templates'), [
-            'cache' => (getenv('ENV') == 'local' ? false : 'templates_cache') ]);
+            'cache' => (getenv('ENV') == 'local' ? false : '../templates_cache') ]);
    
         // filters
    

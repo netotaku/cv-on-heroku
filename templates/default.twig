@@ -1,15 +1,16 @@
 {% extends "layouts/base.twig" %}
 {% block yield %}
-    <section class="section hg">
+    <section class="section hg hg--bigger-gap u-bg-white">
         {% block header %}
             <header class="hg__u hg__u--ful headline">
                 <h1>{{ title }}</h1>
                 <h2>{{ description }}</h2>
             </header>
         {% endblock %}    
-        {% block content %}    
-            
-
+        {% block content %}
+            <div class="hg__u hg__u--ful">
+                {{ content | markdown | raw }}
+            </div>
         {% endblock %}
     </section>
 {% endblock %}

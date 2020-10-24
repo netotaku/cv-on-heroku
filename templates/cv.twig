@@ -1,89 +1,89 @@
 {% extends "layouts/base.twig" %}
 {% block yield %}
 
-<section class="section hg hg--cv">
+    <section class="section hg hg--bigger-gap u-bg-white">
 
-    <header class="hg__u headline">
-        <h1>{{ site.name }}</h1>
-        <h2>{{ title }}</h2>
-        <h3 class="u-grey">{{ location }}</h3>            
-    </header>
+        <header class="hg__u headline">
+            <h1>{{ site.name }}</h1>
+            <h2>{{ title }}</h2>
+            <h3 class="u-grey">{{ location }}</h3>            
+        </header>
 
-    <div class="hg__u hg__u--start-1 hg__u--end-4">
-        <h2>Introduction</h2>
-    </div>
+        <div class="hg__u hg__u--start-1 hg__u--end-4">
+            <h2>Introduction</h2>
+        </div>
 
-    <div class="hg__u hg__u--span-9">
-        {{ personal_statement | markdown | raw }}
-    </div>   
+        <div class="hg__u hg__u--span-9">
+            {{ personal_statement | markdown | raw }}
+        </div>   
 
-    <div class="hg__u hg__u--start-1 hg__u--end-3">
-        <h2>Experience</h2>
-    </div>         
+        <div class="hg__u hg__u--start-1 hg__u--end-3">
+            <h2>Experience</h2>
+        </div>         
 
-    {% for job in work_experience %}
+        {% for job in work_experience %}
 
-        <div class="hg__u hg__u--start-4 hg__u--end-6">                                        
-            <h3>
-                {% if job.link %}
-                    <a href="{{ job.link }}" target="_blank">
-                        {{ job.company }}</a>
-                {% else %}
-                    {{ job.company }}
-                {% endif %}
-            </h3>
-            <h4>{{ job.position }}</h4>
-            <p class="u-grey"><em><time datetime="{{ job.start }}">{{ job.start | format_date }}</time> - <time datetime="{{ job.end }}">{{ job.end | format_date }}</time></em></p>
+            <div class="hg__u hg__u--start-4 hg__u--end-6">                                        
+                <h3>
+                    {% if job.link %}
+                        <a href="{{ job.link }}" target="_blank">
+                            {{ job.company }}</a>
+                    {% else %}
+                        {{ job.company }}
+                    {% endif %}
+                </h3>
+                <h4>{{ job.position }}</h4>
+                <p class="u-grey"><em><time datetime="{{ job.start }}">{{ job.start | format_date }}</time> - <time datetime="{{ job.end }}">{{ job.end | format_date }}</time></em></p>
+            </div> 
+
+            <div class="hg__u hg__u--span-7"> 
+                {{ job.description | markdown | raw }}  
+            </div>                         
+        
+        {% endfor %}
+
+        <div class="hg__u hg__u--start-1 hg__u--end-3">
+            <h2>Skills</h2>
+        </div>  
+
+        <div class="hg__u hg__u--start-4 hg__u--end-12">  
+            {% for key,skill in skills %}
+                <h3>{{ key }}</h3>
+                <p>{{ skill | join(', ') }}</p>
+            {% endfor %}
+        </div>             
+
+        <div class="hg__u hg__u--start-1 hg__u--end-3">
+            <h2>Awards</h2>
+        </div>  
+
+        <div class="hg__u hg__u--start-4 hg__u--end-12">
+            {% for award in awards %}
+                {{ award | markdown | raw }}
+            {% endfor %}
+        </div>              
+
+        <div class="hg__u hg__u--start-1 hg__u--end-3">
+            <h2>Education</h2>
+        </div>  
+
+        <div class="hg__u hg__u--start-4 hg__u--end-12">
+            {% for qualification in education %}
+                <h3>{{ qualification.course }}</h3>
+                <h4>{{ qualification.school }}</h4>
+                <p class="u-grey"><em>{{ qualification.start | format_date }} - {{ qualification.end | format_date }}</em></p>
+                {{ qualification.description | markdown | raw }}
+            {% endfor %}                
         </div> 
 
-        <div class="hg__u hg__u--span-7"> 
-            {{ job.description | markdown | raw }}  
-        </div>                         
-    
-    {% endfor %}
+        <div class="hg__u hg__u--start-1 hg__u--end-3">
+            <h2>Interests</h2>
+        </div>  
 
-    <div class="hg__u hg__u--start-1 hg__u--end-3">
-        <h2>Skills</h2>
-    </div>  
+        <div class="hg__u hg__u--start-4 hg__u--end-12">            
+            {{ hobbies_and_interests | join(', ') | markdown | raw }}              
+        </div>  
 
-    <div class="hg__u hg__u--start-4 hg__u--end-12">  
-        {% for key,skill in skills %}
-            <h3>{{ key }}</h3>
-            <p>{{ skill | join(', ') }}</p>
-        {% endfor %}
-    </div>             
-
-    <div class="hg__u hg__u--start-1 hg__u--end-3">
-        <h2>Awards</h2>
-    </div>  
-
-    <div class="hg__u hg__u--start-4 hg__u--end-12">
-        {% for award in awards %}
-            {{ award | markdown | raw }}
-        {% endfor %}
-    </div>              
-
-    <div class="hg__u hg__u--start-1 hg__u--end-3">
-        <h2>Education</h2>
-    </div>  
-
-    <div class="hg__u hg__u--start-4 hg__u--end-12">
-        {% for qualification in education %}
-            <h3>{{ qualification.course }}</h3>
-            <h4>{{ qualification.school }}</h4>
-            <p class="u-grey"><em>{{ qualification.start | format_date }} - {{ qualification.end | format_date }}</em></p>
-            {{ qualification.description | markdown | raw }}
-        {% endfor %}                
-    </div> 
-
-    <div class="hg__u hg__u--start-1 hg__u--end-3">
-        <h2>Interests</h2>
-    </div>  
-
-    <div class="hg__u hg__u--start-4 hg__u--end-12">            
-        {{ hobbies_and_interests | join(', ') | markdown | raw }}              
-    </div>  
-
-</section>              
+    </section>              
 
 {% endblock %}        

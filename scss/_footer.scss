@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: space-between; 
     
-    font-size: .8em;
+    //font-size: .8em;
 
     &__item{
         display: block;
@@ -31,7 +31,7 @@
             *:not(:last-child){
                 &:after{
                     content: ' /';
-                    color: $grey;
+                    color: grey;
                 }
             }
         }        

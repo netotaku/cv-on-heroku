@@ -2,6 +2,4 @@ title: 404
 description: Sorry, I can't find the page you are looking for.
 path: /404
 template: default
-content: |
-    Sorry, I can't find the page you are looking for.
 slug: 404
