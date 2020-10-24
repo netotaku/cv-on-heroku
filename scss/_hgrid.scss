@@ -1,4 +1,4 @@
-@mixin hgrid($columns, $gap, $break) {
+@mixin hgrid($columns, $gap, $break, $alias) {
 
     display: grid;
     grid-template-columns: repeat($columns, 1fr);   
@@ -10,45 +10,58 @@
 
         @media only screen and (min-width : $break) {  
 
-            @for $j from 1 through ($columns+1) {
-                &--span-#{$j}{
-                    grid-column: span $j;
+            @for $i from 1 through ($columns+1) {
+                // spans
+                &--span-#{$i}{
+                    grid-column: span $i;
+                }
+                // starts
+                &--start-#{$i}{
+                    grid-column-start: $i;
+                } 
+                // ends                
+                &--end-#{$i}{
+                    grid-column-end: $i;
                 }
             }  
-
+    
+            // alias
+            @if ($alias) {
                 
-            @if ($columns % 3 > 0){
-                @warn "Columns not divisible by 3, therefore no thirds modifier alias";                
-            } @else {
-                &--thd{
-                    grid-column: span ($columns / 3);
+                @if ($columns % 3 > 0){
+                    @warn "Columns not divisible by 3, therefore no thirds modifier alias";                
+                } @else {
+                    &--thd{
+                        grid-column: span ($columns / 3);
+                    }
+                    &--2-thds{
+                        grid-column: span (($columns / 3) * 2);
+                    }
                 }
-                &--2-thds{
-                    grid-column: span (($columns / 3) * 2);
-                }
-            }
 
-            @if ($columns % 4 > 0){
-                @warn "Columns not divisible by 4, therefore no quarters modifier alias";                
-            } @else {
-                &--qtr{
-                    grid-column: span ($columns / 4);
+                @if ($columns % 4 > 0){
+                    @warn "Columns not divisible by 4, therefore no quarters modifier alias";                
+                } @else {
+                    &--qtr{
+                        grid-column: span ($columns / 4);
+                    }
+                    &--3-qtrs{
+                        grid-column: span (($columns / 4) * 3);
+                    }
                 }
-                &--3-qtrs{
-                    grid-column: span (($columns / 4) * 3);
-                }
-            }
 
-            @if ($columns % 2 > 0){
-                @warn "Columns not divisible by 2, therefore no halves modifier alias";                
-            } @else {
-                &--hlf{
-                    grid-column: span ($columns / 2);
-                }
-            }            
+                @if ($columns % 2 > 0){
+                    @warn "Columns not divisible by 2, therefore no halves modifier alias";                
+                } @else {
+                    &--hlf{
+                        grid-column: span ($columns / 2);
+                    }
+                }            
 
-            &--ful{
-                grid-column: span $columns;
+                &--ful{
+                    grid-column: span $columns;
+                }
+
             }
         }
     }

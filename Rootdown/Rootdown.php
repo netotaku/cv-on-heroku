@@ -4,16 +4,21 @@ namespace Rootdown;
 
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\Yaml\Yaml;
+use Symfony\Component\Dotenv\Dotenv;
 use Purl\Url;
 use Michelf\Markdown;
 
+use Rootdown\Controllers;
+
 class Rootdown {
 
-    public function __construct(){        
-        $this->boot_up();
+    public function __construct(){  
+        $model = $this->model();
+        $view = $this->view();
+        $this->controller($model, $view);
     }
 
-    private function boot_up(){
+    private function file(){
 
         $file = false;
 
@@ -32,14 +37,17 @@ class Rootdown {
             header("HTTP/1.0 404 Not Found");
         }
 
-        $model  = $this->model($file);
-        $twig   = $this->twig();
-
-        echo $twig->render($model["template"] . '.twig', $model);
-
+        return $file;
     }
 
-    private function model($file){
+    private function controller($model, $view){    
+        echo $view->render($model["template"] . '.twig', $model);        
+    }
+
+
+    private function model(){
+
+        $file   = $this->file();
 
         $model = Yaml::parseFile($file);
         $model['last_updated'] = filemtime($file);
@@ -52,15 +60,17 @@ class Rootdown {
         return $model;
     }
 
-    private function twig(){
+    private function view(){
 
-        $twig = new \Twig\Environment(new \Twig\Loader\FilesystemLoader('../templates'), [
-            'cache' => false // 'templates_cache',
-        ]);
+        $dotenv = new Dotenv();
+        $dotenv->load('../.env');
+
+        $view = new \Twig\Environment(new \Twig\Loader\FilesystemLoader('../templates'), [
+            'cache' => (getenv('ENV') == 'local' ? false : 'templates_cache') ]);
    
         // filters
    
-        $twig->addFilter(new \Twig\TwigFilter('format_date', function ($dt) {
+        $view->addFilter(new \Twig\TwigFilter('format_date', function ($dt) {
             $o = "Current";
             if($dt != 'Current'){
                 $o = gmdate("M, Y", $dt); 
@@ -70,11 +80,11 @@ class Rootdown {
    
         //////////
    
-        $twig->addFilter(new \Twig\TwigFilter('markdown', function ($string) {
+        $view->addFilter(new \Twig\TwigFilter('markdown', function ($string) {
             return Markdown::defaultTransform($string);
         }));      
 
-        return $twig;
+        return $view;
 
     }
 }

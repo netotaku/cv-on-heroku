@@ -1,25 +1,15 @@
-<!DOCTYPE html>
-<html lang="en-GB">
-    <head>
-        {% include 'partials/head.twig' %}
-        <!-- If you are interested in how this site works, you can view the code here: https://github.com/netotaku/cv-on-heroku. -->
-    </head>
-    <body>    
-        {% block hero %}{% endblock %}
-        <article class="grid{{ modifier }}">
-            {% block content %}
-                <header class="grid__unit grid__unit--1-4 u-mobile-hr headline">
-                    {{ header | markdown | raw }}   
-                    <p class="u-grey"><em>Last update / <time datetime="{{ last_updated }}">{{ last_updated | format_date }}</time></em></p>                                                    
-                </header>
-                <div class="grid__unit grid__unit--1-4 u-mobile-hr">
-                    {{ content | markdown | raw }}    
-                </div>                                   
-            {% endblock %}
-            {% include 'partials/footer.twig' %}
-        </article>
+{% extends "layouts/base.twig" %}
+{% block yield %}
+    <section class="section hg">
+        {% block header %}
+            <header class="hg__u hg__u--ful headline">
+                <h1>{{ title }}</h1>
+                <h2>{{ description }}</h2>
+            </header>
+        {% endblock %}    
+        {% block content %}    
+            
 
-        {# <a href="/" class="menu"></a> #}
-
-    </body>
-</html>
+        {% endblock %}
+    </section>
+{% endblock %}

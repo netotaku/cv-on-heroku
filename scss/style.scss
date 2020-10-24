@@ -1,18 +1,17 @@
+@import "vars";
+@import "globals";
 @import "hgrid";
-
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;  
-}
+@import "utilities";
+@import "menu";
+@import "footer";
 
 .section{
-    padding: 5vw;
+    padding: 8vw;
 }
 
 .card{
     display: flex;
-    height: 60px;
+    min-height: 60px;
     justify-content: center;
     align-items: center;
     &--grey{
@@ -27,6 +26,22 @@
     }
 }
 
-.hg{
-    @include hgrid(12,20px,800px);
+.hg{    
+    @include hgrid(12, 20px, $break, true);
+    @media only screen and (min-width : $break) {  
+        &--cv{
+            gap: 8vw 20px;
+        }
+        &--complex{
+            grid-template-columns: repeat(3, 1fr);           
+        }
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+
+}
+  
+@media (prefers-color-scheme: light) {
+
 }
