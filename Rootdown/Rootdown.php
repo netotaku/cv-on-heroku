@@ -65,6 +65,8 @@ class Rootdown {
         $dotenv = new Dotenv();
         $dotenv->load('../.env');
 
+        var_dump(getenv('ENV'));
+
         $view = new \Twig\Environment(new \Twig\Loader\FilesystemLoader('../templates'), [
             'cache' => (getenv('ENV') == 'local' ? false : 'templates_cache') ]);
    
