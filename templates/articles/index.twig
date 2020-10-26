@@ -1,0 +1,28 @@
+{% extends "layouts/base.twig" %}
+{% block yield %}
+
+    <section class="section u-bg-white hg hg--bigger-gap">
+
+        <header class="hg__u hg__u--span-3">
+            <h1>{{ title }}</h1>
+            <nav><a href="/">Home</a> /  Articles</nav>
+        </header>
+        
+        <div class="hg__u hg__u--span-9 hg">
+            {% for article in articles %}
+                
+                    <header class="hg__u hg__u--ful headline">
+                        <h2>{{ article.title }}</h2>
+                        <p class="u-grey"><em>{{ article.date }}</em></p>
+                    </header>
+                    <div class="hg__u hg__u--ful">
+                        {{ article.description | markdown | raw }}
+                        <p class=""><a href="{{ article.path }}">Read more</a></p>
+                    </div>
+                
+            {% endfor %}
+        </div>
+
+    </section>
+
+{% endblock %}

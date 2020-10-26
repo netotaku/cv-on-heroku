@@ -42,6 +42,9 @@ menus:
         -   
             label: Home
             path: /
+        -   
+            label: Articles
+            path: /articles                    
         # -   
         #     label: Playlists
         #     path: /playlists
@@ -50,4 +53,4 @@ menus:
             path: /cv
         -   
             label: Contact
-            path: /holla            
+            path: /holla        

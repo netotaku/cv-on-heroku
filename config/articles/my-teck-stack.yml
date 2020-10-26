@@ -1,0 +1,8 @@
+path: /articles/my-tech-stack
+title: My Tech Stack
+template: articles/post
+slug: my-tech-stack
+description: |
+  As developers we use a huge amount of tools and technologies. [Inspired by a recent post by GitLab](https://about.gitlab.com/handbook/business-ops/tech-stack/) I thought I would document my own preferences.
+date: "2020-10-26"
+controller: ["Articles"]

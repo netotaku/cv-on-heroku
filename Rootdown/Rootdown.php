@@ -46,8 +46,18 @@ class Rootdown {
         return $file;
     }
 
-    private function controller($model, $view){    
+    private function controller($model, $view){   
+        
+        if(isset($model["controller"])){
+            foreach($model["controller"] as $controller){
+                $cls = "Rootdown\\" . $controller;
+                $c = new $cls($model);
+                $model = $c->data();
+            }            
+        }
+
         echo $view->render($model["template"] . '.twig', $model);        
+
     }
 
     private function model(){

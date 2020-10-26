@@ -1,0 +1,5 @@
+path: /articles
+title: Articles
+template: articles/index
+slug: articles
+controller: ["Articles"]

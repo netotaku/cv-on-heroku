@@ -1,0 +1,8 @@
+path: /articles/grids
+template: articles/grid  
+title: CSS Grid Mixin Examples
+description: |
+    To get up to speed with CSS grids I have been doing some experimentation. Here is what I have discovered and some SASS tools you may find usful.
+slug: grid
+date: "2020-10-25"
+controller: ["Articles"]

@@ -1,9 +1,11 @@
-path: /playlists
+path: /articles/playlists
 title: Playlists
-template: playlists
+template: articles/playlists
 slug: playlists
-header: |
-    # Playlists
+description: |
+  I put a lot of effort into my spotify playlists, I generally creat new ones on a monthly basis. I have recorded them here, mainly because the Spotify library feature doesn't really cut and I generally forget what I've put together. 
+date: "2020-10-15"
+controller: ["Articles"]
 playlists: 
     themed:
         - id: '5CgYoF9DYeNeNnGWSdPNma'

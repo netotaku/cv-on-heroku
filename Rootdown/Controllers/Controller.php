@@ -3,7 +3,7 @@
 namespace Rootdown;
 
 class Controller{
-    public function _construct(){
-
+    public function _construct($model){
+        
     }
 }
