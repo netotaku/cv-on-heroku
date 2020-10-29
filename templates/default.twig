@@ -2,7 +2,7 @@
 {% block yield %}
     <section class="section hg hg--bigger-gap u-bg-white">
         {% block header %}
-            <header class="hg__u hg__u--ful headline">
+            <header class="hg__u hg__u--ful u-mobile-small">
                 <h1>{{ title }}</h1>
                 <h2>{{ description }}</h2>
             </header>
@@ -12,5 +12,24 @@
                 {{ content | markdown | raw }}
             </div>
         {% endblock %}
+        {% if articles %}
+            <header class="hg__u hg__u--thd u-mobile-small">
+                <h1>Articles</h1>            
+            </header>        
+            <div class="hg__u hg__u--2-thds hg">
+                {% for article in articles %}  
+                    {% if article.slug != slug %}              
+                        <header class="hg__u hg__u--ful u-mobile-small">
+                            <h2>{{ article.title }}</h2>
+                            <p class="u-grey"><em>{{ article.date }}</em></p>
+                        </header>
+                        <div class="hg__u hg__u--ful">
+                            {{ article.description | markdown | raw }}
+                            <p class=""><a href="{{ article.path }}">Read more</a></p>
+                        </div>
+                    {% endif %}                
+                {% endfor %}
+            </div>
+        {% endif %}
     </section>
 {% endblock %}

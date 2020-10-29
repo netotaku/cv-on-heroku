@@ -1,12 +1,67 @@
-@import "vars";
+$black: #111;
+$blue: #007bff;
+$grey: #666666;
+$yellow: #F8E71C;
+$purple: #BD10E0;
+$gutter: 20px;
+$spacing: 8vw;
+$break: 800px;
+
 @import "globals";
 @import "hgrid";
+@import "hflex";
 @import "utilities";
-@import "menu";
-@import "footer";
 
 .section{
-    padding: 8vw;
+    $gutter: 8vw;
+    padding: $gutter;
+    &--no-{
+        &top{
+            padding-top: 0;
+        }
+        &bottom{
+            padding-bottom: 0;
+        }
+    }
+    @media only screen and (min-width : $break) {  
+        &--half-{
+            &top{
+                padding-top: $gutter/2;
+            }
+            &bottom{
+                padding-bottom: $gutter/2;
+            }
+        }   
+    }
+}
+
+.nav{
+    font-family: sans-serif;
+    font-weight: bold;
+    a{
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    &--inline{
+        li{
+            display: inline-block;
+        }
+        *:not(:last-child){
+            &:after{
+                content: ' /';
+                color: grey;
+            }
+        }
+    }
+}
+
+.main-nav{
+    padding: $gutter/2 $spacing;   
+    a{
+        color: #fff;
+    } 
 }
 
 .card{
@@ -26,16 +81,30 @@
     }
 }
 
+.hero{   
+    display: block; 
+    height: 20vw;
+    background-image: url(/assets/images/flash.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .hg{    
-    @include hgrid(12, 20px, $break, true);
+    @include hgrid(12, $gutter, $break, true);
     @media only screen and (min-width : $break) {  
         &--bigger-gap{
-            gap: 8vw 20px;
+            gap: $spacing $gutter;
         }
         &--complex{
             grid-template-columns: repeat(3, 1fr);           
         }
     }
+}
+
+.qr{
+    width: 80px;
+    height: 80px;
 }
 
 @media (prefers-color-scheme: dark) {

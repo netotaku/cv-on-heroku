@@ -1,8 +1,6 @@
-{% extends "layouts/base.twig" %}
-{% block yield %}
-
-    <section class="section hg u-bg-white">
-        <div class="hg__u hg__u--ful card headline"><h1>CSS Grid Examples</h1></div>
+{% extends "articles/post.twig" %}
+{% block content %}
+    <div class="hg__u hg__u--ful hg">
         <div class="hg__u hg__u--ful card"><em>Twelve column grid span modifiers</em></div>
         <div class="hg__u hg__u--span-12 card card--grey">span-12</div>
         {% for i in 1..11 %}                
@@ -42,11 +40,8 @@
                 Footer
             </header> 
         </article>
-
-
         <div class="hg__u hg__u--ful card"><em>Mixin and SASS implementation</em></div>
         <div class="hg__u hg__u--ful"><script src="https://gist.github.com/netotaku/05951a783f0b6066114c1376f602fbbf.js"></script></div>
-
-    </section>
+    </div>
 
 {% endblock %}

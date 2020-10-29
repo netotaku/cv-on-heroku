@@ -51,27 +51,10 @@ img{
     height: auto;
 }
 
-.hero{
-    background: url(/assets/images/me.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 36vw;
-}
-
-
-.qr{
-    width: 80px;
-    height: 80px;
-}
-
-
 @media screen and (max-width: $break) {  
     article{
         padding: $gutter;
-    }
-    .hero{        
-        height: 100vw;
-    }
+    }    
     .headline{       
         font-size: .7em;
     }

@@ -14,7 +14,7 @@ class Articles{
         $this->model = $model;
         
         $files = new Finder();
-        $articles = $files->files()->in('../config/articles');
+        $articles = $files->files()->in('../data/articles');
 
         $feed = [];
 

@@ -1,13 +1,57 @@
 <!DOCTYPE html>
-<html class="u-bg-grey" lang="en-GB">
+<html lang="en-GB">
     <head>
-        {% include 'partials/head.twig' %}        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{ title }}</title>
+        <meta name="description" content="{{ description }}">
+        <meta name="generator" content="ZX Spectrum 128 +2" />
+        <meta name="author" content="{{ site.name }}">
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="{{ site.name }}" />
+        <meta name="twitter:creator" content="{{ social.twitter.handle }}" />
+
+        <link rel="icon" type="image/png" href="https://nclarkson.herokuapp.com/assets/images/me.jpg" />
+        <link rel="stylesheet" href="/assets/css/style.css?{{ cache_buster }}">
+
+        <meta property="og:image" content="https://nclarkson.herokuapp.com/assets/images/me.jpg"/>
+        <meta property="og:title" content="{{ site.name }}"/>
+        <meta property="og:description" content="{{ description }}"/>
+        <meta property="og:site_name" content="{{ site.name }}"/>
+        <meta property="og:url" content="{{ site.url }}"/>
+        <meta property="og:type" content="website" />
+        <meta property="fb:app_id" content="{{ socials.facebook.app_id }}" /> 
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga }}"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '{{ site.ga }}');
+        </script>   
+
     </head>
     <body>
-        {% block yield %}
-        {% endblock %}
-        <footer class="section footer">
-            {% include "partials/footer.twig" %}
+        <a href="/" class="u-bg-yellow hero"></a>
+        <nav class="section u-bg-black main-nav hf hf--center u-mobile-small">
+            <ul class="nav nav--inline">
+                {% for link in menus.main %}
+                    <li><a href="{{ link.path }}">{{ link.label }}</a></li>
+                {% endfor %}
+            </ul>  
+        </nav>
+        {% block yield %}{% endblock %}
+        <footer class="section section--half-top section--half-bottom hf hf--center hf--space footer u-mobile-small">            
+            <div class="footer__item">
+                <ul class="nav nav--inline">
+                    {% for link in menus.main %}
+                        <li><a href="{{ link.path }}">{{ link.label }}</a></li>
+                    {% endfor %}
+                </ul>  
+                <p class="u-grey"><em>Last update {{ last_updated | format_date }}</em></p>
+            </div>
+            <a class="footer__item" href="/holla">
+                {% include "partials/qr.svg" %}</a>
         </footer>
     </body>
 </html>

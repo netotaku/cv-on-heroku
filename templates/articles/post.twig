@@ -1,1 +1,50 @@
-Post
+{% extends "layouts/base.twig" %}
+{% block yield %}
+
+    <section class="section u-bg-white hg hg--bigger-gap">
+
+        <header class="hg__u hg__u--ful u-mobile-small">
+            <h1>{{ title }}</h1>
+            <nav class="u-grey"><a href="/">Home</a> / <a href="/articles">Articles</a> / {{ title }}</nav>
+        </header>
+
+        <div class="hg__u hg__u--ful">
+            <div class="u-bigger u-i">
+                {{ description | markdown | raw }}
+            </div>        
+        </div>
+
+        <div class="hg__u hg__u--ful">            
+            {{ content | markdown | raw }}            
+        </div>
+            
+        {% block content %}       
+            <div class="hg__u hg__u--ful">     
+                {{ content | markdown | raw }}
+            </div>            
+        {% endblock %}
+        
+        <div class="hg__u hg__u--ful">
+            <p class="u-grey"><em>Posted: {{ date }}</em></p>
+        </div>
+
+        <header class="hg__u hg__u--thd headline">
+            <h1>More Articles</h1>            
+        </header>        
+        <div class="hg__u hg__u--2-thds hg">
+            {% for article in articles %}  
+                {% if article.slug != slug %}              
+                    <header class="hg__u hg__u--ful headline">
+                        <h2>{{ article.title }}</h2>
+                        <p class="u-grey"><em>{{ article.date }}</em></p>
+                    </header>
+                    <div class="hg__u hg__u--ful">
+                        {{ article.description | markdown | raw }}
+                        <p class=""><a href="{{ article.path }}">Read more</a></p>
+                    </div>
+                {% endif %}                
+            {% endfor %}
+        </div>
+    </section>
+
+{% endblock %}

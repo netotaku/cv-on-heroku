@@ -1,0 +1,19 @@
+.hf{
+    display: flex;
+    &--center{
+        align-items: center;
+    }
+    &--middle{
+        justify-content: center;
+    }
+    &--space{
+        justify-content: space-between; 
+    }
+    &__u{
+        &--self-{
+            &end{
+                align-self: flex-end;
+            }
+        }
+    }
+}

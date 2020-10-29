@@ -1,4 +1,5 @@
 .u-{
+
     &grey{
         color: $grey;
     }
@@ -14,17 +15,34 @@
         }
         &grey{
             background-color: #eee;
+        }
+        &yellow{
+            background-color: $yellow;
+        }
+        &black{
+            background-color: #111;
         }        
     }
+    &bigger{
+        font-size: 1.4em;
+    }
+    &i{
+        font-style: italic;
+    }
     
-
     @media screen and (max-width: $break) {  
+        &bigger{
+            font-size: 1.1em;
+        }
         &mobile-{
             &hr{
                 margin-bottom: $gutter;
             }
             &only{
                 display: block;
+            }
+            &small{                
+                font-size: .7em;                
             }
         }
         &no-mobile{

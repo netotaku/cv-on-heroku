@@ -1,6 +1,11 @@
-{% extends "default.twig" %}
-{% block yield %} 
-    {% for playlist in playlists.eclectic %}       
-        <iframe src="https://open.spotify.com/embed/playlist/{{ playlist.id }}" width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>       
-    {% endfor %}
+{% extends "articles/post.twig" %}
+{% block content %} 
+    <div class="hg__u hg__u--ful hg">
+        <div class="hg__u hg__u--ful card"><em>Eclectic</em></div>
+        {% for playlist in playlists.eclectic %}   
+            <div class="hg__u hg__u--thd">    
+                <iframe src="https://open.spotify.com/embed/playlist/{{ playlist.id }}" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>       
+            </div>
+        {% endfor %}
+    </div>
 {% endblock %}

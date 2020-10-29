@@ -29,7 +29,7 @@ class Rootdown {
         $file = false;
 
         $files = new Finder();
-        $files->files()->in('../config')->exclude('system');
+        $files->files()->in('../data')->exclude('system');
         
         foreach ($files as $f) {                  
            $yml = Yaml::parseFile($f->getRealPath());      
@@ -39,7 +39,7 @@ class Rootdown {
         }
 
         if(!$file){
-            $file = '../config/system/404.yml';
+            $file = '../data/system/404.yml';
             header("HTTP/1.0 404 Not Found");
         }
 
@@ -66,9 +66,9 @@ class Rootdown {
 
         $model = Yaml::parseFile($file);
         $model['last_updated'] = filemtime($file);
-        $model['cache_buster'] = filemtime('assets/css/main.css');
+        $model['cache_buster'] = filemtime('assets/css/style.css');
         
-        $globals = Yaml::parseFile('../config/system/globals.yml');
+        $globals = Yaml::parseFile('../data/system/globals.yml');
 
         $model = array_merge($model, $globals);
 

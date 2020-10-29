@@ -1,0 +1,19 @@
+path: /articles/css-grids-sass-mixin-examples
+template: articles/grid  
+title: CSS Grid Examples
+description: |
+    To get up to speed with CSS grids I have been doing some experimentation. Here is what I have discovered and some SASS tools you may find usful.
+slug: grid
+date: "2020-10-25"
+controller: ["Articles"]
+content: |
+
+    It was time to get my head around how CSS Grids work, they have been out in the wild now for a few years and [browser support has hit 94%](https://caniuse.com/css-grid). 
+    The first issues i had observed is a lot of the example concentrate of syntax rather than workflow, and while the 
+    syntax is relatively simple the workflow is not. I suppose it very difficult to tackle workflow in a tutorial, and really you just need to roll up your 
+    sleves and get craking with a practical application. So here a some pros and cons;
+
+    ## Pros
+
+    - Firstly, indications are that CSS Grids are brilliant and what we've need since we stopped using table layout in terms of layou consistancy.
+
