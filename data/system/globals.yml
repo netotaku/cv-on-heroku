@@ -42,9 +42,9 @@ menus:
         -   
             label: Home
             path: /
-        # -   
-        #     label: Articles
-        #     path: /articles                    
+        -   
+            label: Articles
+            path: /articles                    
         -   
             label: CV
             path: /cv

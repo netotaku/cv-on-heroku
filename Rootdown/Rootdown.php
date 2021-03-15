@@ -22,6 +22,7 @@ class Rootdown {
         $model = $this->model();
         $view = $this->view();
         $this->controller($model, $view);
+        
     }
 
     private function file(){

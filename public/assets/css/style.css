@@ -4,6 +4,9 @@
   box-sizing: border-box;
   line-height: 1.6; }
 
+[v-cloak] {
+  display: none; }
+
 body, html {
   font-size: 1.1em;
   font-family: serif;
@@ -52,6 +55,19 @@ h6 {
   font-family: sans-serif;
   letter-spacing: -.6px; }
 
+.type h1 {
+  margin-bottom: 20px; }
+.type h2 {
+  margin-bottom: 20px; }
+.type h3 {
+  margin-bottom: 20px; }
+.type h4 {
+  margin-bottom: 20px; }
+.type h5 {
+  margin-bottom: 20px; }
+.type h6 {
+  margin-bottom: 20px; }
+
 img {
   display: block;
   width: 100%;
@@ -63,6 +79,25 @@ img {
 
   .headline {
     font-size: .7em; } }
+.contents {
+  padding: 10px;
+  font-family: sans-serif; }
+  .contents__u {
+    padding: 5px 10px; }
+  @media screen and (min-width: 800px) {
+    .contents {
+      display: flex;
+      flex-wrap: wrap; }
+      .contents__u {
+        width: 33.33%;
+        max-width: 33.33%; } }
+
+.anchor:hover:before {
+  content: '# ';
+  color: #666666;
+  position: absolute;
+  margin-left: -22px; }
+
 .hf {
   display: flex; }
   .hf--center {
@@ -92,6 +127,10 @@ img {
   font-size: 1.4em; }
 .u-i {
   font-style: italic; }
+.u-pull-right {
+  text-align: right; }
+.u-pull-left {
+  text-align: left; }
 @media screen and (max-width: 800px) {
   .u-bigger {
     font-size: 1.1em; }

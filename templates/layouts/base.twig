@@ -21,19 +21,9 @@
         <meta property="og:url" content="{{ site.url }}"/>
         <meta property="og:type" content="website" />
         <meta property="fb:app_id" content="{{ socials.facebook.app_id }}" /> 
-
-        <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga }}"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '{{ site.ga }}');
-        </script>   
-
     </head>
-    <body>
-        <a href="/" class="u-bg-yellow hero"></a>
-        <nav class="section u-bg-black main-nav hf hf--center u-mobile-small">
+    <body>        
+        <nav class="section u-bg-black main-nav hf hf--center u-mobile-small">            
             <ul class="nav nav--inline">
                 {% for link in menus.main %}
                     <li><a href="{{ link.path }}">{{ link.label }}</a></li>
@@ -53,5 +43,13 @@
             <a class="footer__item" href="/holla">
                 {% include "partials/qr.svg" %}</a>
         </footer>
+        {{ scripts | raw }}
+        <script type="text/javascript" async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga }}"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '{{ site.ga }}');
+        </script> 
     </body>
 </html>

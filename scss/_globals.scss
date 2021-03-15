@@ -5,6 +5,10 @@
     line-height: 1.6;    
 }
 
+[v-cloak]{
+    display: none;
+}
+
 body, html{    
     font-size: 1.1em;   
     font-family: serif;    
@@ -45,6 +49,14 @@ h2{
     }
 }  
 
+.type{
+    @for $index from 1 through 6 {
+        h#{$index}{      
+            margin-bottom: $gutter;
+        }
+    }  
+}
+
 img{
     display: block;
     width: 100%;
@@ -57,5 +69,34 @@ img{
     }    
     .headline{       
         font-size: .7em;
+    }
+}
+
+.contents{  
+    // border: solid 4px #ccc;
+    padding: $gutter/2;
+    font-family: sans-serif;  
+    &__u{
+        padding: $gutter/4 $gutter/2;
+    }
+    @media screen and (min-width: $break) { 
+        display: flex;
+        flex-wrap: wrap; 
+        &__u{
+            width: 33.33%;
+            max-width: 33.33%;
+        
+        }
+    }
+}
+
+.anchor{
+    &:hover{
+        &:before{
+            content: '# ';
+            color: $grey;
+            position: absolute;
+            margin-left: -22px;
+        }
     }
 }

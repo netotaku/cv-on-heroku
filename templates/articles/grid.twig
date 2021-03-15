@@ -1,5 +1,10 @@
 {% extends "articles/post.twig" %}
 {% block content %}
+
+    <div class="hg__u hg__u--ful">            
+        {{ content | markdown | raw }}            
+    </div> 
+    
     <div class="hg__u hg__u--ful hg">
         <div class="hg__u hg__u--ful card"><em>Twelve column grid span modifiers</em></div>
         <div class="hg__u hg__u--span-12 card card--grey">span-12</div>

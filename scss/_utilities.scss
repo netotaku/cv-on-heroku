@@ -29,6 +29,14 @@
     &i{
         font-style: italic;
     }
+    &pull-{
+        &right{
+            text-align: right;
+        }
+        &left{
+            text-align: left;
+        }
+    }
     
     @media screen and (max-width: $break) {  
         &bigger{

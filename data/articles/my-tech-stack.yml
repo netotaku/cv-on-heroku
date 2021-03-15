@@ -3,6 +3,197 @@ title: My Tech Stack
 template: articles/post
 slug: my-tech-stack
 description: |
-  As developers we use a huge amount of tools and technologies. [Inspired by a recent post by GitLab](https://about.gitlab.com/handbook/business-ops/tech-stack/) I thought I would document my own preferences.
+  Modern humans use a huge amount of tools and technologies. [Inspired by a recent post by GitLab](https://about.gitlab.com/handbook/business-ops/tech-stack/) I thought I would document my own preferences.
 date: "2020-10-26"
 controller: ["Articles"]
+scripts: |  
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+  <script type="text/javascript" src="/assets/javascript/contents.js"></script>
+content: |
+
+  ## Programming Languages
+
+  I've been around for a long time. I started on windows developing classic ASP and Access application in the late 90s but soon graduated to open source in the early 2000s. Many of the languages I have used I have left behind (Jython, ActionScript and argably CSS for example), but some have stayed.
+  
+  ### PHP
+
+  It's ugly, horredously inconsistent and, up until relatively recently, way behind many other languges in term of features and workflow. Noone is proud of using PHP, it's not my favourite language however I think it has many important things that makes it essential.
+  
+  Its one of the few languages designed specifically for the web. It's ubiquity means that it is extreamly well documented with a huge amount of resources and exmaples online, making a great start point. 
+
+  There is a vast amount of choice in terms of libraries and frameworks, something that make the C\# comunmity shudder. But if you need to do it. It's probably already done. 
+
+  #### Components
+
+  An on that note, here are some of the pre baked things I use when im starting something from scratch, although the irony of that last statement is not lost on me. 
+
+  _This is not a boiler plate, I remember a few years ago when everyone was obsesing about HTML5 bolier plates._
+
+  ##### Markdown
+
+  Im a big fan of markdown, in fact im writing it right now! It removes the faff of sanitising HTML everywhere. This page has an implementation of 
+  
+  ##### Anything by Symphony
+
+  I generally reach for Symphony Components, I like their consitency, workflow and the documentation. I also like the the chaining pattern they tend to use. Its very reminicent of jQuery, ironically i always thought that pattern was a compromise for Javascript, but i'll get to that later.
+
+  ##### YAML
+
+  YAML is a brilliant format, it the basis on which the data within this site is held. I love the way is can seamlessly blend HTML, data and markdown all in 
+
+  ### Frameworks
+
+  I've used many frameworks over the years, CakePHP, Rails, Express
+
+  #### Laravel
+
+  ### Templating
+
+  #### Liquid
+
+  #### Twig
+
+  ### Javascript
+
+  I worked with Flash for many years before it's demonisation in around 2010. I miss Flash, knowing it and particularly the Scripting side of it, meant that I got asked to work on a lot fun projects. I specialised in making Flash games for years. After it fell out of favour and everyone switched to more complex in browser experiences, I had a head start. AS2/3 was essintially Javascript and all the hack and gotchas that it presented I was familiar with, plus I had all my riffs. AJAX was familiar, JSON was also not a problems, and I had worked extensivley with animation ( pre CSS3 ), collision detection, dynamic line drawing.
+
+  #### Vue
+
+  #### jQuery
+
+  I resisted jQuery for a few years, I had orginally hung my hat on the YUI framework. I preffered YUI as it felt more natural. It's was more like a set of helpers rather than jQuery's way of working which for me smashed the magic out of working with Javascript. Eventually a change of job required me to get up to speed. I was lucky, as before jQuery exisited I had already worked on some pretty hefty 'Vanilla' Javascript ( or more accuratly Javascript projects )
+
+
+  ### CSS
+
+  CSS is like Email. It feels like it wasnt thought through, or that it got away with itself. It feels like a complete ground up rethink is in order, but in the iterim the community filled the gap and came up with transpilers in an attempt to back fill the workflow problems, such as. The omisson of includes that leaves you having to work in massive and unweildy single files. No encapsulation or nesting or logic. None of this seems to have been addressed, along with the ommission of even basic layout features until relatively recently, leaving simple requirements like putting things in a line, matching height and vertical centering based on hacks and work arounds. 
+
+  I get that web pages are documents at heart and maybe the design treatment that is applied to them is thrashing the base tech. But maybe it should have moved quicker. Only since CSS Grid and Flexbox it feels like the construction kit is realtively complete.
+  
+  #### SASS
+
+  Syntatically Awsome Style Sheets, is a terrible name, and in theroy SASS should never have exisited. But it has largely address all of the issues with CSS.
+
+  #### BEM
+
+  I love and hate BEM. I use it for everything, but in the back of my mind I believe most of the time its over engineering. But im stuck with it now, at least until someone comes ups with something better.
+
+  ## Graphics
+
+  I've only ever mastered 2 graphics packages. I orginally adopted Macromedia Fireworks, I was working with Flash and they played fairly nicely together from the start, Subsquently I never learned Photoshop. Photoshop and Fireworks were completely different but almost the same making the transisition between to two very difficult, particularly as the mastery of graphic packages is as much about workflow and technique, which buttons to press is the thin end of the wedge. I also was thought Photoshop is for photo editing anyway. But over time they migrated alot of the Fireworks feature over to Photoshop and eventually Adobe, who aquired Macromedia, phased Fireworks out. 
+
+  ### Sketch
+
+  The Sketch came along. They did a few things really right. They made it £90, this is an antidote to the prohibitively expensive Adobe products. It was completely stripped back to basics and was incredibly intuative. I picked it up in a couple of sessions, something I could never do with Photoshop. It's also built on web principles the SVG and CSS export features, while present in a lot of other software, seems to work really we'll with Sketch. It's great for knocking out wireframes and has loads of feature around responsive design, which i will admit ive never used. But it's very light on photo editing. I suppose this make sense due to the homogonisation of modern web design. Its photo lead, but tend to stick to block, content managed imagery that is as the mursey of the user rather than the web design process. I just stick a few bit in from unsplash to set the scene and let client screw it up later. 
+
+  _I have tried Figma and do use it for a cople of things, but it clunkier in browser, also does anyone really realtime coloborately design?_
+
+  ## Text Editing
+
+  Text editiors are such a big part of a computer programmer's day. I have used many over the years. Starting with Notepad, gradating to Textpad, then moving on to a couple of IDEs notabley Netbeans, Eclipse and Aptana. I think i stopped using IDEs at the point Sublime came out. I was working on a blend of Windows and OSx at the time and my Windows computer was really struggling to run the IDEs. Sublime was light and you could pimp it and it didnt chug on the computer i was using. I used Sublime for ages cancelling it's invitation to pay every 20 saves for years ... Not today Sublime I would joke as i canceled the popup. 
+
+  Eventually I bought Sublime, about 2 days before Github anounced Atom. I switched to Atom, it had a better name an cooler icon and came with Git Itegrated out of the box. It was flakey to start with but it seemed to get better over time. I used Atom for a few years then VSCode happened.
+
+  ### Visual Studio Code
+
+  I use VSCode exclusively now. I'd say its the best thing Microsoft have done. It's almost made up for the painful years getting things working in IE6 and IE7. I dont know why its so good. I litterally can't put my finger on it. But it seems to have captured everyone else's imagination too, or at least until someone brings out another one that becomes this next best thing. 
+
+  Maybe making good text editiors is relatively straight forward. Unlike CMS or Programming Languauges they are always satifiing and dont feel like youre working with the best of bad bunch.
+
+  
+  ## Project Management
+
+  ### SmartSheet 
+
+  ### G-suite
+  
+  ### Trello
+
+  ### Google Keep
+
+
+  ## CMS 
+
+  ### CraftCMS
+
+  ### Jekyll
+
+  ### Squarespace
+
+  ### Shopify
+  
+
+  ## Versioning / Git vs SVN
+
+  I suppose the two biggest names in versioning are GIT and SVN. I've used both extensively. I prefer GIT, why? probably because it is the one im most familiar with, however, even after a few decades I am probably only scratching the surface of its feature set. I generaly reach for stackoverflow when things go weird and paste stuff, some times randomly, into terminal until things start working as intended. [XKCD described this perfectly here](https://xkcd.com/1597/)
+
+  SVN gets a lot of stick, but it largely performs the same function, just in a slightly nuancesd way. I think the distubited nature of GIT makes it more condusive to the workflows of hipster frontenders who prefer to work in coffee shops, who see things like file locking as oppressive. But SVN still has its place, Partcularly in enterprise where code can't often leave the building, but its a big day when you have to merge a branch. 
+
+  Oddly, I hardly use versioning for what you would expect versioning to be used for. I can count on hand how many times ive rolled back. But it great as the basis of continuous Intgration. In that respect I advocate [GitFlow](https://nvie.com/posts/a-successful-git-branching-model/). Also, just getting code off your computer as a backup in 3rd party services such as GitHub or Bitbucket has its own value. BitBucket and Github are largely the same, even the pricing models have been aliged more recently. Although Github has the inherent value of it community. 
+
+  _It still amuses me that it's called Git._
+
+  ## PaaS
+
+  For my personal work I have moved away from traditional hosting contracts. I _OK_ with infrasture and devops, but it doesn't interest me. Proffesionally, I have people to do that for me. 
+
+  ### Heroku
+
+  ### AWS
+
+  AWS is realy hard. Its has its own nomenclature and workflow and the thing that it does is really complicated. A perfect storm, however, the S3 buckets have come in really useful for scaling things like image upload folders. I have found website become weird and flakey when they start to run out of disk space. this is normally due to unsolicitied file uploads, backups and log files. I tend to stick all of those is an S3 bucket. It scales, its abstracted from code ( versioning, deployment and servers ) and, once you get your head round permissions and the CLI, its has a load of tools.
+
+  ## Data
+
+  ### MariaDB / MySQL
+
+  ### Contentful
+
+  ## Marketing Automation / CRM
+
+  ### Mailchimp
+
+  ### Salesforce / Pardot
+
+
+  ## Comms
+
+  ### Google Chat
+
+  ### Google Meet
+
+  ### Whatsapp
+
+
+  ## Hardware
+
+  ### MBP
+
+  ### iPhone
+
+  ### Apple TV
+
+  ### Ninitendo Switch
+
+
+  ## Social
+
+  I have been a heavy Social Media user all the way back to dobedo.co.uk (where did that go!?). While social is often deridied, I still see it as a force for good. Many platforms have come and gone, im looking at you MySpace. 
+
+  ### YouTube
+
+  I am a Premium user, I caved after a year. I get a lot from YouTube.
+
+  ### Reddit
+
+  After many years I still love Reddit. It's massive online banterthon and relatively untouched by brands. The Meme workflow
+
+  ### Twitter
+  I have had phases with Twitter over the last 10 years. 10 years ago it was full of nerds talking about Twitter \#meta and the odd marginal celebrity, or faded star who you still have respect for that you could actually talk to. After a while it exploded and lost something, it was no longer as constructive informative. Early on I could spend an evening chatting with new friends about web dev and horror films and all the other nerdy stuff I like. We would even meet up off line. Most of those people have faded away, I have no idea where they went. That said, I still use regularly it for posting nonsense and keeping up with current affairs. [You can follow me on Twitter here](https://twitter.com/t_pk).
+
+  ### Instagram
+  I use Instagram mainly for a gallery for my own photograhy. Thankfully, I remain unaffected by the well publicised psycological issues its famous for. I enjoy taking photographs with my iPhone an put care into it. The filters supplied have remained pretty much unchanged since its started, but they supply some nice results. I enjoy the creativity of the platform and find it inspiring. [You can follow me on Instagram here](https://instagram.com/clar.ky)
+
+  _I still have a Facebook account, but I visit it less and less. The algorythum change a few years ago proved to useful to supress old school friends views of Brexit which were unalgined to my own, but replaced them with endless click bait and videos of people making benches from epoxy resign. Subsquently, the old magic moments of keeping in touch with people who you have largely lost contact with have gone. I stilll have an account, but it doesnt really occur to me to visit it anymore. I keep it, as it's oauth implementation is really useful, there are some good communities that have built around the groups feature such as [Temporary Fandoms](https://www.facebook.com) but it isnt the place it used to be. I still use business manager for work._
+
+

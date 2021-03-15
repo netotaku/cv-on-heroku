@@ -14,12 +14,19 @@
             </div>        
         </div>
 
-        <div class="hg__u hg__u--ful">            
-            {{ content | markdown | raw }}            
-        </div>
+        {% verbatim %}
+            <div v-if="headings.length > 0" class="hg__u hg__u--ful type" id="js-contents" v-cloak>            
+                <h2>Contents</h2>                  
+                <ul class="contents u-bg-grey">
+                    <li class="contents__u" v-for="heading in headings">
+                        <td><a :href="'#' + heading.name">{{ heading.label }}</a></td>
+                    </li> 
+                </ul>                
+            </div>
+        {% endverbatim %}
             
         {% block content %}       
-            <div class="hg__u hg__u--ful">     
+            <div class="hg__u hg__u--ful type" id="js-contents-target">     
                 {{ content | markdown | raw }}
             </div>            
         {% endblock %}
