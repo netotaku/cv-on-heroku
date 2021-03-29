@@ -2,3 +2,4 @@ vendor
 .sass-cache
 templates_cache
 .env
+.DS_Store
