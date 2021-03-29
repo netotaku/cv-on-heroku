@@ -79,7 +79,8 @@ class Rootdown {
     private function view(){
 
         $view = new \Twig\Environment(new \Twig\Loader\FilesystemLoader('../templates'), [
-            'cache' => (getenv('ENV') == 'local' ? false : '../templates_cache') ]);
+            'cache' => (getenv('ENV') == 'local' ? false : '../templates_cache'),
+            'debug' => true ]);
    
         // filters
    
@@ -90,14 +91,44 @@ class Rootdown {
             }
             return $o;
         }));
+
+        $view->addFilter(new \Twig\TwigFilter('handle_empty', function ($string) {
+            return ($string == "") ? "&#8212;" : $string;
+        }));
    
         //////////
    
         $view->addFilter(new \Twig\TwigFilter('markdown', function ($string) {
             return Markdown::defaultTransform($string);
-        }));      
+        }));     
+        
+        $view->addFilter(new \Twig\TwigFilter('format_money', function ($string) {
+            $int = (int)$string/100;
+            \setlocale(LC_MONETARY, 'en_GB.UTF-8');
+            return \money_format('%n', $int);
+        })); 
+        
+        $view->addFilter(new \Twig\TwigFilter('stars', function ($rating) {
+
+            $rating = (int)$rating;
+            $stars = "";
+
+            for($i=0; $i < $rating; $i++){
+                $stars .= "&#9733; ";
+            }  
+            
+            for($i=0; $i < (5-$rating); $i++){
+                $stars .= "&#9734; ";
+            }  
+
+            return $stars;
+
+        }));         
+
+        $view->addExtension(new \Twig\Extension\DebugExtension());
 
         return $view;
 
     }
+
 }

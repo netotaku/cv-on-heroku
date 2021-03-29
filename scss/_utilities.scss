@@ -1,5 +1,7 @@
 .u-{
-
+    &nowrap{
+        white-space: nowrap;
+    }
     &grey{
         color: $grey;
     }
@@ -9,6 +11,14 @@
     &mobile-only{
         display: none;
     }
+    &scroll-{
+        &x{
+            position: relative;
+            // overflow: hidden;
+            overflow-y: auto;
+        }
+    }
+
     &bg-{
         &white{
             background-color: #fff;
@@ -57,4 +67,5 @@
             display: none;
         }        
     }
+
 }

@@ -1,0 +1,36 @@
+.table{
+    
+    width: 100%;
+    border-collapse: collapse;
+    position: relative;
+    border: 1px solid #ccc;
+
+    .table__ellipsis{
+        position: relative;
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 200px;
+    }
+    th{
+        text-align: left;
+        font-family: sans-serif;
+    }
+    td,th{
+        padding: 8px 12px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    &__header{
+        &--fixed{
+            th{             
+                position: sticky;
+                top: -1px;
+                background: #f5f5f5;
+                z-index: 1;
+            }            
+        }       
+    }
+
+}

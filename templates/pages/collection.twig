@@ -1,0 +1,86 @@
+{% extends "default.twig" %}
+{% block hero %}
+    <section class="hero hero--theme">
+        <div class="hero__inner">
+            <img class="hero__item hero__item--brand" src="/assets/theme/adventure-time-logo.png">
+            <img class="hero__item hero__item--lockup" src="/assets/theme/jake-and-finn.png">
+        </div>
+    </section>
+{% endblock %}
+{% block content %}
+
+    {# <p>{{ total.cost }}</p> #}
+
+    <div class="hg__u hg__u--ful">
+
+        <div class="u-scroll-x table__wrapper">
+            <table class="table table--theme">
+                <thead class="table__header--fixed">
+                    <tr>
+                        <th>#</th>
+                        <th>Collectable</th>
+                        <th>Collection</th>
+                        <th>Nerd</th>
+                        <th>Source</th>
+                        <th>Date</th>
+                        <th>Price</th>
+                        <th>Rating</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for collectable in collectables %}        
+                        <tr>
+                            <td>{{ collectable.collectable_id }}</td>
+                            <td title="{{ collectable.collectable_label }}"><span class="table__ellipsis">{{ collectable.collectable_label }}</span></td>
+                            <td><span class="table__ellipsis">{{ collectable.collection_label }}</span></td>
+                            <td><span class="table__ellipsis">{{ collectable.nerd_label | handle_empty | raw }}</span></td>                    
+                            <td><span class="table__ellipsis">{{ collectable.source_label | handle_empty | raw }}</span></td>
+                            <td><span class="table__ellipsis">{{ collectable.collected_date | handle_empty | raw }}</span></td>
+                            <td><span class="table__ellipsis">
+                                {% if collectable.collected_price == "" %}
+                                    {{ collectable.collected_price | handle_empty | raw }}
+                                {% else %}
+                                    {{ collectable.collected_price | format_money | raw }}
+                                {% endif %}
+                            </span></td>
+                            <td>
+                                {% if collectable.collected_rating == "" %}
+                                    {{ collectable.collected_rating | handle_empty | raw }}
+                                {% else %}
+                                    <span class="u-nowrap">{{ collectable.collected_rating | stars | raw }}</span>
+                                {% endif %}                            
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </body>
+            </table>
+        </div> <!-- /.u-scroll -->
+
+    </div>
+{# 
+    <div class="hg__u hg__u--thd">
+        <h2>Collections</h2>
+        <ul>
+            {% for item in collections.collections %}
+                <li><label><input value="{{ item.collection_id }}" type="checkbox" checked> {{ item.collection_label }}</label></li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="hg__u hg__u--thd">
+        <h2>Sources</h2>
+        <ul>
+            {% for item in collections.sources %}
+                <li><label><input value="{{ item.source_id }}" type="checkbox" checked> {{ item.source_label }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="hg__u hg__u--thd">
+        <h2>Nerds</h2>
+        <ul>
+            {% for item in collections.nerds %}
+                <li><label><input value="{{ item.nerd_id }}" type="checkbox" checked> {{ item.nerd_label }}</label></li>
+            {% endfor %}
+        </ul>
+    </div> #}
+
+{% endblock %}

@@ -21,28 +21,15 @@
         <meta property="og:url" content="{{ site.url }}"/>
         <meta property="og:type" content="website" />
         <meta property="fb:app_id" content="{{ socials.facebook.app_id }}" /> 
+
+        <!-- theme -->
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+
     </head>
     <body>        
-        <nav class="section u-bg-black main-nav hf hf--center u-mobile-small">            
-            <ul class="nav nav--inline">
-                {% for link in menus.main %}
-                    <li><a href="{{ link.path }}">{{ link.label }}</a></li>
-                {% endfor %}
-            </ul>  
-        </nav>
         {% block yield %}{% endblock %}
-        <footer class="section section--half-top section--half-bottom hf hf--center hf--space footer u-mobile-small">            
-            <div class="footer__item">
-                <ul class="nav nav--inline">
-                    {% for link in menus.main %}
-                        <li><a href="{{ link.path }}">{{ link.label }}</a></li>
-                    {% endfor %}
-                </ul>  
-                <p class="u-grey"><em>Last update {{ last_updated | format_date }}</em></p>
-            </div>
-            <a class="footer__item" href="/holla">
-                {% include "partials/qr.svg" %}</a>
-        </footer>
         {{ scripts | raw }}
         <script type="text/javascript" async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga }}"></script>
         <script>
